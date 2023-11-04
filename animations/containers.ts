@@ -1,9 +1,9 @@
-export const container = {
+export const staggerContainer = {
   initial: {},
   animate: { transition: { staggerChildren: 0.05, delayChildren: 0.5 } },
 };
 
-export const child = {
+export const opacityScaleChild = {
   initial: { opacity: 0, x: -10, scale: 0 },
   animate: {
     opacity: 1,

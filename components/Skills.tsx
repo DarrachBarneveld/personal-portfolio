@@ -5,20 +5,7 @@ import SectionHeading from "./ui/SectionHeading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
 import { motion } from "framer-motion";
-
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+import { staggeredFadeUp } from "@/animations/variants";
 
 const Skills: FunctionComponent = () => {
   const { ref } = useSectionInView("Skills");
@@ -34,8 +21,9 @@ const Skills: FunctionComponent = () => {
           <motion.li
             className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
-            variants={fadeInAnimationVariants}
+            variants={staggeredFadeUp}
             initial="initial"
+            whileInView="animate"
             viewport={{
               once: true,
             }}
