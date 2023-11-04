@@ -1,17 +1,14 @@
 "use client";
 
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import React, { FunctionComponent } from "react";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import SectionHeading from "./ui/SectionHeading";
 import { useSectionInView } from "@/hooks/hooks";
 import CustomTimeLineComponent from "./CustomTimeLineComponent";
 
-export default function Experience() {
+const Experience: FunctionComponent = () => {
   const { ref } = useSectionInView("Experience");
 
   return (
@@ -24,4 +21,6 @@ export default function Experience() {
       </VerticalTimeline>
     </section>
   );
-}
+};
+
+export default Experience;
