@@ -3,9 +3,10 @@
 import Image from "next/image";
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
-import { FaDownload, FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
+import { LuDownload } from "react-icons/lu";
 
 const Intro: FunctionComponent = () => {
   const waveAnimation = {
@@ -92,7 +93,7 @@ const Intro: FunctionComponent = () => {
           download
         >
           Download CV{" "}
-          <FaDownload className="opacity-60 transition group-hover:translate-y-1" />
+          <LuDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
 
         <a
