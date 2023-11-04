@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { FunctionComponent } from "react";
 import SectionHeading from "./ui/SectionHeading";
 import { motion } from "framer-motion";
 
-export default function About() {
+const About: FunctionComponent = () => {
   return (
     <motion.section
       className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
@@ -42,4 +42,6 @@ export default function About() {
       </p>
     </motion.section>
   );
-}
+};
+
+export default About;

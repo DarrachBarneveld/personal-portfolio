@@ -1,13 +1,17 @@
-import { ReactNode } from "react";
+import { FunctionComponent, ReactNode } from "react";
 
-type SectionHeadingProps = {
+interface SectionHeadingProps {
   children: ReactNode;
-};
+}
 
-export default function SectionHeading({ children }: SectionHeadingProps) {
+const SectionHeading: FunctionComponent<SectionHeadingProps> = ({
+  children,
+}) => {
   return (
     <h2 className="mb-8 text-center text-3xl font-medium capitalize">
       {children}
     </h2>
   );
-}
+};
+
+export default SectionHeading;
