@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { SectionName } from "@/lib/types";
 
 type ActiveSectionContextProviderProps = {
@@ -10,11 +10,15 @@ type ActiveSectionContextProviderProps = {
 type ActiveSectionContextType = {
   activeSection: SectionName | undefined;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  timeOfLastClick: number;
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 const defaultState: ActiveSectionContextType = {
   activeSection: undefined,
   setActiveSection: () => {},
+  timeOfLastClick: 0,
+  setTimeOfLastClick: () => {},
 };
 
 export const ActiveSectionContext = createContext(
@@ -25,10 +29,23 @@ export function ActiveSectionProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
-
+  const [timeOfLastClick, setTimeOfLastClick] = useState(0); // disable observer momentarily
   return (
-    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+    <ActiveSectionContext.Provider
+      value={{
+        activeSection,
+        setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
+      }}
+    >
       {children}
     </ActiveSectionContext.Provider>
   );
+}
+
+export function useActiveSectionContext() {
+  const context = useContext(ActiveSectionContext);
+
+  return context;
 }

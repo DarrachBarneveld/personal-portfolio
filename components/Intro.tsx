@@ -20,7 +20,6 @@ const Intro: FunctionComponent = () => {
   };
 
   const { ref } = useSectionInView("Home", 0.5);
-
   return (
     <section
       ref={ref}

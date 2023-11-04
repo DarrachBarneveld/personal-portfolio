@@ -4,12 +4,16 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { child, container } from "@/animations/nav";
 import { links } from "@/lib/data";
-import { ActiveSectionContext } from "@/context/ActiveSectionContext";
+import {
+  ActiveSectionContext,
+  useActiveSectionContext,
+} from "@/context/ActiveSectionContext";
 
 interface NavbarProps {}
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
-  const { activeSection, setActiveSection } = useContext(ActiveSectionContext);
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   return (
     <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
@@ -33,7 +37,10 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
                 },
               )}
               href={link.hash}
-              onClick={() => setActiveSection(link.name)}
+              onClick={() => {
+                setActiveSection(link.name);
+                setTimeOfLastClick(Date.now());
+              }}
             >
               {link.name}
               {link.name === activeSection && (
