@@ -1,14 +1,15 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useContext } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { child, container } from "@/animations/nav";
 import { links } from "@/lib/data";
+import { ActiveSectionContext } from "@/context/ActiveSectionContext";
 
 interface NavbarProps {}
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useContext(ActiveSectionContext);
 
   return (
     <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">

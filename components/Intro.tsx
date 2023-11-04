@@ -7,6 +7,7 @@ import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
 import { LuDownload } from "react-icons/lu";
+import { useSectionInView } from "@/hooks/hooks";
 
 const Intro: FunctionComponent = () => {
   const waveAnimation = {
@@ -17,8 +18,12 @@ const Intro: FunctionComponent = () => {
       repeat: 3,
     },
   };
+
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
     >

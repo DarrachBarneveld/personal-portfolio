@@ -3,8 +3,11 @@
 import React, { FunctionComponent } from "react";
 import SectionHeading from "./ui/SectionHeading";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/hooks/hooks";
 
 const About: FunctionComponent = () => {
+  const { ref } = useSectionInView("About", 0.5);
+
   return (
     <motion.section
       className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
@@ -12,6 +15,7 @@ const About: FunctionComponent = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
+      ref={ref}
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
