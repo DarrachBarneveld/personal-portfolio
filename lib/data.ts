@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap, LuLaptop } from "react-icons/lu";
 import corpcommentImg from "@/public/images/corpcomment.png";
 import rmtdevImg from "@/public/images/rmtdev.png";
 import wordanalyticsImg from "@/public/images/wordanalytics.png";
+import hackathon from "@/public/images/hackathon.jpg";
 
 export const links = [
   {
@@ -60,27 +61,38 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const hackathonProjectData = [
   {
     title: "CorpComment",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["react", "next.js", "mongodb", "tailwind", "prisma"],
     imageUrl: corpcommentImg,
   },
   {
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["react", "typescript", "next.js", "tailwind", "redux"],
     imageUrl: rmtdevImg,
   },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["react", "next.js", "sql", "tailwind", "framer"],
     imageUrl: wordanalyticsImg,
+  },
+] as const;
+
+export const projectCategoriesData = [
+  {
+    title: "Hackathons",
+    description:
+      "Im addicted to hackathons! The ability to gain hands-on experience in teamwork, meeting challenging deadlines, and mastering the intricacies of Git version control—all while having a blast an making friends!",
+    imageUrl: hackathon,
+    icon: React.createElement(LuLaptop),
+    projects: hackathonProjectData,
   },
 ] as const;
 

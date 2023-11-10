@@ -1,10 +1,11 @@
 "use client";
 
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import SectionHeading from "./ui/SectionHeading";
 import Project from "./Project";
-import { projectsData } from "@/lib/data";
+import { projectCategoriesData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
+import ProjectCategory from "./ProjectCategory";
 
 interface ProjectsProps {}
 
@@ -15,8 +16,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
     <section ref={ref} id="projects" className="mb-28 scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
       <div>
-        {projectsData.map((project, index) => (
-          <Project {...project} key={index} />
+        {projectCategoriesData.map((category, index) => (
+          <ProjectCategory {...category} key={index} />
         ))}
       </div>
     </section>
