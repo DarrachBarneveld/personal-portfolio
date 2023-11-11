@@ -3,11 +3,10 @@
 import Image from "next/image";
 import { FunctionComponent, useState } from "react";
 import ScrollViewWrapper from "./ui/ScrollViewWrapper";
-import { projectCategoriesData } from "@/lib/data";
+import { projectCategoriesData, projectsDataExcerpt } from "@/lib/data";
 import { AnimatePresence, motion } from "framer-motion";
-import Project from "./Project";
+import ProjectCard from "./ProjectCard";
 import { LuArrowBigLeft } from "react-icons/lu";
-import { projectsData } from "@/lib/data";
 
 function categoryColor(id: number) {
   let iconColor = "";
@@ -51,7 +50,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
 }) => {
   const [showProjects, setShowProjects] = useState(false);
 
-  const filteredProjects = projectsData.filter((project) =>
+  const filteredProjects = projectsDataExcerpt.filter((project) =>
     projects.some((id: string) => id === project.id),
   );
 
@@ -105,7 +104,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
           >
             <LuArrowBigLeft />
           </button>
-          <h2 className="my-3 text-center text-3xl font-bold text-indigo-600">
+          <h2 className="mx-auto my-3 w-fit border-b border-indigo-600 border-opacity-30 text-3xl font-bold text-indigo-600">
             {title}
           </h2>
 
@@ -118,7 +117,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
                 className="group"
                 key={index}
               >
-                <Project {...project} />
+                <ProjectCard {...project} />
               </motion.div>
             ))}
           </div>

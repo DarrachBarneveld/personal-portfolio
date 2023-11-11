@@ -9,7 +9,9 @@ import neonDefence from "@/public/images/neondefence.png";
 import retroMashup from "@/public/images/retromashup.png";
 import lotrPokemon from "@/public/images/lotr-pokemon.png";
 import lepreTrack from "@/public/images/lepretrack.png";
+import lepreTrackV2 from "@/public/images/lepretrackv2.png";
 import coolcoders from "@/public/images/coolcoders.png";
+import bmeditation from "@/public/images/bmeditaiton.png";
 
 export const links = [
   {
@@ -65,11 +67,70 @@ export const experiencesData = [
   },
 ] as const;
 
+export const projectsDataExcerpt = [
+  {
+    id: "1",
+    title: "Neon Defence",
+    excerpt:
+      "Neon Defence, a hackathon gem, merges tower defense with a Tron-like aesthetic.",
+    tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
+    imageUrl: neonDefence,
+  },
+  {
+    id: "2",
+    title: "Retro Mashup Mayhem",
+    excerpt:
+      "Retro Mashup Mayhem, born from a nostalgic retro hackathon, pays homage to the golden era of 80s/90s video games.",
+    tags: ["javascript", "kaboomjs", "tiled"],
+    imageUrl: retroMashup,
+  },
+  {
+    id: "3",
+    title: "LepreTrack",
+    excerpt:
+      "LepreTrack is a platform empowering users to monitor and enhance their 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
+    tags: ["javascript", "html", "css", "firebase", "bootstrap"],
+    imageUrl: lepreTrack,
+  },
+  {
+    id: "4",
+    title: "Lord of the Rings Pokemon",
+    excerpt:
+      "A multiplayer card game merging Lord of the Rings and Pokémon, where players strategically duel in the iconic Middle-earth setting.",
+    tags: ["react", "socket.io", "node.js", "express", "typescript"],
+    imageUrl: lotrPokemon,
+  },
+  {
+    id: "5",
+    title: "Cool Coders",
+    excerpt:
+      "Cool Coders: A hub for tech enthusiasts to share insights and knowledge through engaging articles, fostering a collaborative learning community.",
+    tags: ["python", "django", "bootstrap"],
+    imageUrl: coolcoders,
+  },
+  {
+    id: "6",
+    title: "LepreTrack V2",
+    excerpt:
+      "LepreTrack v2 builds upon its predecessor, LepreTrack v1, but incorporates the latest front-end technologies for an enhanced and seamless user experience.",
+    tags: ["react", "typescript", "bootstrap", "firebase"],
+    imageUrl: lepreTrackV2,
+  },
+  {
+    id: "7",
+    title: "B-Meditation",
+    excerpt:
+      "Embrace mindfulness with BMeditation, featuring quotes from history's great teachers. Journal and meditate on these wisdom nuggets for a transformative experience.",
+    tags: ["react native", "javascript", "expo"],
+    imageUrl: bmeditation,
+  },
+];
+
 export const projectsData = [
   {
     id: "1",
     title: "Neon Defence",
-    description:
+    excerpt:
       "Neon Defence, a hackathon gem, merges tower defense with a Tron-like aesthetic.",
     tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
     imageUrl: neonDefence,
@@ -82,7 +143,7 @@ export const projectsData = [
   {
     id: "2",
     title: "Retro Mashup Mayhem",
-    description:
+    excerpt:
       "Retro Mashup Mayhem, born from a nostalgic retro hackathon, pays homage to the golden era of 80s/90s video games.",
     tags: ["javascript", "kaboomjs", "tiled"],
     imageUrl: retroMashup,
@@ -98,7 +159,7 @@ export const projectsData = [
   {
     id: "3",
     title: "LepreTrack",
-    description:
+    excerpt:
       "LepreTrack is a platform empowering users to monitor and enhance their 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
     tags: ["javascript", "html", "css", "firebase", "bootstrap"],
     imageUrl: lepreTrack,
@@ -114,21 +175,42 @@ export const projectsData = [
   {
     id: "4",
     title: "Lord of the Rings Pokemon",
-    description:
+    excerpt:
       "A multiplayer card game merging Lord of the Rings and Pokémon, where players strategically duel in the iconic Middle-earth setting.",
     tags: ["react", "socket.io", "node.js", "express", "typescript"],
     imageUrl: lotrPokemon,
     link: "https://lotr-pokemon.netlify.app",
     collaborators: [],
   },
+
   {
     id: "5",
     title: "Cool Coders",
-    description:
+    excerpt:
       "Cool Coders: A hub for tech enthusiasts to share insights and knowledge through engaging articles, fostering a collaborative learning community.",
     tags: ["python", "django", "bootstrap"],
     imageUrl: coolcoders,
     link: "https://coolcoders-b69260c4617a.herokuapp.com/",
+    collaborators: [],
+  },
+  {
+    id: "6",
+    title: "LepreTrack V2",
+    excerpt:
+      "LepreTrack v2 builds upon its predecessor, LepreTrack v1, but incorporates the latest front-end technologies for an enhanced and seamless user experience.",
+    tags: ["react", "typescript", "bootstrap", "firebase"],
+    imageUrl: lepreTrackV2,
+    link: "https://lepretrackv2.netlify.app/",
+    collaborators: [],
+  },
+  {
+    id: "7",
+    title: "B-Meditation",
+    excerpt:
+      "Embrace mindfulness with BMeditation, featuring quotes from history's great teachers. Journal and meditate on these wisdom nuggets for a transformative experience.",
+    tags: ["react native", "javascript", "expo"],
+    imageUrl: bmeditation,
+    link: "https://bmeditation-api-website.vercel.app/",
     collaborators: [],
   },
 ];
@@ -141,7 +223,7 @@ export const projectCategoriesData = [
       "My favorite projects over the years! These highlight my proficiency in various languages and frameworks across front/backend development, highlighting my skills in crafting comprehensive full-stack applications.",
     imageUrl: showcase,
     icon: React.createElement(CgTrophy),
-    projects: ["5"],
+    projects: ["5", "6", "7"],
   },
   {
     id: 2,
