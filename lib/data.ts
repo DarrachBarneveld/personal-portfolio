@@ -1,11 +1,15 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { CgTrophy, CgWorkAlt } from "react-icons/cg";
+import { FaGamepad, FaReact } from "react-icons/fa";
 import { LuGraduationCap, LuLaptop } from "react-icons/lu";
-import corpcommentImg from "@/public/images/corpcomment.png";
-import rmtdevImg from "@/public/images/rmtdev.png";
-import wordanalyticsImg from "@/public/images/wordanalytics.png";
+import showcase from "@/public/images/showcase.png";
 import hackathon from "@/public/images/hackathon.jpg";
+import gameDev from "@/public/images/gamedev.webp";
+import neonDefence from "@/public/images/neondefence.png";
+import retroMashup from "@/public/images/retromashup.png";
+import lotrPokemon from "@/public/images/lotr-pokemon.png";
+import lepreTrack from "@/public/images/lepretrack.png";
+import coolcoders from "@/public/images/coolcoders.png";
 
 export const links = [
   {
@@ -61,38 +65,101 @@ export const experiencesData = [
   },
 ] as const;
 
-export const hackathonProjectData = [
+export const projectsData = [
   {
-    title: "CorpComment",
+    id: "1",
+    title: "Neon Defence",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["react", "next.js", "mongodb", "tailwind", "prisma"],
-    imageUrl: corpcommentImg,
+      "Neon Defence, a hackathon gem, merges tower defense with a Tron-like aesthetic.",
+    tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
+    imageUrl: neonDefence,
+    link: "https://neon-defence.netlify.app/",
+    collaborators: [
+      { name: "Tanguy", github: "https://github.com/tlalexandre" },
+      { name: "Devan", github: "https://github.com/devancadman" },
+    ],
   },
   {
-    title: "rmtDev",
+    id: "2",
+    title: "Retro Mashup Mayhem",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["react", "typescript", "next.js", "tailwind", "redux"],
-    imageUrl: rmtdevImg,
+      "Retro Mashup Mayhem, born from a nostalgic retro hackathon, pays homage to the golden era of 80s/90s video games.",
+    tags: ["javascript", "kaboomjs", "tiled"],
+    imageUrl: retroMashup,
+    link: "https://retro-mashup-mayhem.netlify.app/",
+    collaborators: [
+      { name: "Dan", github: "https://github.com/DanMorriss" },
+      { name: "Sandra", github: "https://github.com/SandraBergstrom" },
+      { name: "Debbie", github: "https://github.com/DebbieBergstrom" },
+      { name: "Shida", github: "https://github.com/Shida18719" },
+      { name: "Yash", github: "https://github.com/ysgurjar" },
+    ],
   },
   {
-    title: "Word Analytics",
+    id: "3",
+    title: "LepreTrack",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["react", "next.js", "sql", "tailwind", "framer"],
-    imageUrl: wordanalyticsImg,
+      "LepreTrack is a platform empowering users to monitor and enhance their 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
+    tags: ["javascript", "html", "css", "firebase", "bootstrap"],
+    imageUrl: lepreTrack,
+    link: "https://lepretrack.netlify.app/",
+    collaborators: [
+      { name: "Shane", github: "https://github.com/Shane-Donlon" },
+      { name: "Adam", github: "https://github.com/adammkeane" },
+      { name: "Mark", github: "https://github.com/Markpm-code" },
+      { name: "Amanda", github: "https://github.com/apita1423" },
+      { name: "Aurelien", github: "https://github.com/AMJL-16" },
+    ],
   },
-] as const;
+  {
+    id: "4",
+    title: "Lord of the Rings Pokemon",
+    description:
+      "A multiplayer card game merging Lord of the Rings and Pokémon, where players strategically duel in the iconic Middle-earth setting.",
+    tags: ["react", "socket.io", "node.js", "express", "typescript"],
+    imageUrl: lotrPokemon,
+    link: "https://lotr-pokemon.netlify.app",
+    collaborators: [],
+  },
+  {
+    id: "5",
+    title: "Cool Coders",
+    description:
+      "Cool Coders: A hub for tech enthusiasts to share insights and knowledge through engaging articles, fostering a collaborative learning community.",
+    tags: ["python", "django", "bootstrap"],
+    imageUrl: coolcoders,
+    link: "https://coolcoders-b69260c4617a.herokuapp.com/",
+    collaborators: [],
+  },
+];
 
 export const projectCategoriesData = [
   {
+    id: 1,
+    title: "Showcase",
+    description:
+      "My favorite projects over the years! These highlight my proficiency in various languages and frameworks across front/backend development, highlighting my skills in crafting comprehensive full-stack applications.",
+    imageUrl: showcase,
+    icon: React.createElement(CgTrophy),
+    projects: ["5"],
+  },
+  {
+    id: 2,
     title: "Hackathons",
     description:
       "Im addicted to hackathons! The ability to gain hands-on experience in teamwork, meeting challenging deadlines, and mastering the intricacies of Git version control—all while having a blast an making friends!",
     imageUrl: hackathon,
     icon: React.createElement(LuLaptop),
-    projects: hackathonProjectData,
+    projects: ["1", "2", "3"],
+  },
+  {
+    id: 3,
+    title: "Game Dev",
+    description:
+      "My love for games sparked a journey into game development which greatly enhanced my skills, knowledge, and passion for programming as I ventured into creating my own gaming experiences.",
+    imageUrl: gameDev,
+    icon: React.createElement(FaGamepad),
+    projects: ["1", "2", "4"],
   },
 ] as const;
 
