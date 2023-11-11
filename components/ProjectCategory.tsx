@@ -10,23 +10,33 @@ import { LuArrowBigLeft } from "react-icons/lu";
 import { projectsData } from "@/lib/data";
 
 function categoryColor(id: number) {
-  let className = "";
+  let iconColor = "";
+  let border = "";
+  let background = "";
   switch (id) {
     case 1:
-      className = "bg-yellow-400 shadow-lg shadow-yellow-600/40";
+      iconColor = "bg-yellow-400 shadow-lg shadow-yellow-600/40";
+      border = "border border-yellow-600";
+      background = "bg-yellow-100";
       break;
     case 2:
-      className = "bg-red-600 shadow-lg shadow-red-800/40";
+      iconColor = "bg-red-600 shadow-lg shadow-red-800/40";
+      border = "border border-red-600";
+      background = "bg-red-100";
       break;
     case 3:
-      className = "bg-green-600 shadow-lg shadow-green-800/40";
+      iconColor = "bg-green-600 shadow-lg shadow-green-800/40";
+      border = "border border-green-600";
+      background = "bg-green-100";
       break;
     default:
-      className = "bg-red-600 shadow-lg shadow-red-800/40";
+      iconColor = "bg-red-600 shadow-lg shadow-red-800/40";
+      border = "border border-red-600";
+      background = "bg-red-100";
       break;
   }
 
-  return className;
+  return { iconColor, background, border };
 }
 
 type ProjectCategoryProps = (typeof projectCategoriesData)[number];
@@ -45,7 +55,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
     projects.some((id: string) => id === project.id),
   );
 
-  const iconColor = categoryColor(id);
+  const { iconColor, border, background } = categoryColor(id);
 
   return (
     <AnimatePresence mode="wait">
@@ -87,7 +97,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ scale: 0.7, opacity: 0, transition: { duration: 0.15 } }}
-          className="relative rounded-2xl border border-indigo-600 bg-indigo-100 p-2"
+          className={`container relative rounded-2xl border  border-indigo-600 bg-indigo-50 p-2`}
         >
           <button
             className=" absolute inline-flex transform rounded-full bg-blue-300 p-2 text-2xl capitalize text-blue-700 transition-colors duration-200 hover:text-white hover:underline"

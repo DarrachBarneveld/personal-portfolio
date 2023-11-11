@@ -18,8 +18,8 @@ const Project: FunctionComponent<ProjectProps> = ({
 }) => {
   return (
     <Link href={`/project/${id}`}>
-      <section className="relative w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:cursor-pointer hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8 sm:group-even:pl-8">
-        <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
+      <section className="relative max-w-[35rem] overflow-hidden rounded-lg border border-black/5 bg-white transition hover:cursor-pointer hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8 sm:group-even:pl-8">
+        <div className="flex h-full max-w-[50%] flex-col p-7 sm:pr-2 sm:group-even:ml-[14rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -48,7 +48,7 @@ const Project: FunctionComponent<ProjectProps> = ({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-lg shadow-2xl transition
+          className="absolute -right-40 top-8 hidden w-[25rem] rounded-t-lg shadow-2xl transition
                   group-even:-left-40 
                   group-even:right-[initial]
                   group-hover:-translate-x-3

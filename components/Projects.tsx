@@ -14,7 +14,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
   return (
     <section ref={ref} id="projects" className="mb-28 scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
-      <div className="flex flex-col items-center gap-3 lg:gap-[4rem]">
+      <div className="flex flex-col items-center gap-3 lg:gap-[5rem]">
         {projectCategoriesData.map((category, index) => (
           <ProjectCategory {...category} key={index} />
         ))}
