@@ -69,11 +69,11 @@ const Intro: FunctionComponent = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hey I am Darrach.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <strong>Hey I am Darrach. </strong> {`I'm a `}
+        <strong>full-stack developer</strong> with{" "}
+        <strong className="font-bold">2 years</strong> of experience. I enjoy
+        building <em>sites &#38; apps</em>. My focus is{" "}
+        <u className="underline">React (Next.js)</u>.
       </motion.h1>
 
       <motion.div
