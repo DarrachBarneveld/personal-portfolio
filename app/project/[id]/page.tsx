@@ -28,14 +28,22 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           </div>
           <div className="-mx-2 mb-4 flex">
             <div className="w-1/2 px-2">
-              <button className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700">
+              <a
+                href="https://github.com/DarrachBarneveld"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700"
+                target="_blank"
+              >
                 <FaCode /> Code
-              </button>
+              </a>
             </div>
             <div className="w-1/2 px-2">
-              <button className=" flex w-full items-center justify-center gap-2 rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">
+              <a
+                href={link}
+                className=" flex w-full items-center justify-center gap-2 rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+                target="_blank"
+              >
                 <CgWebsite /> Live Site
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -55,8 +63,8 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
               Collaborators
             </span>
             <ul className="items-center">
-              {collaborators.map((collab) => (
-                <li>
+              {collaborators.map((collab, index) => (
+                <li key={index}>
                   <a
                     href={collab.github}
                     aria-label={`Link to ${collab.name}'s Github`}
