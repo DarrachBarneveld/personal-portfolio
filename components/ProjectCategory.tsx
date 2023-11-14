@@ -38,7 +38,7 @@ function categoryColor(id: number) {
   return { iconColor, background, border };
 }
 
-type ProjectCategoryProps = (typeof projectCategoriesData)[number];
+export type ProjectCategoryProps = (typeof projectCategoriesData)[number];
 
 const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
   id,
