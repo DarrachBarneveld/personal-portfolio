@@ -12,6 +12,8 @@ import lepreTrack from "@/public/images/lepretrack.png";
 import lepreTrackV2 from "@/public/images/lepretrackv2.png";
 import coolcoders from "@/public/images/coolcoders.png";
 import bmeditation from "@/public/images/bmeditaiton.png";
+import touristTraveller from "@/public/images/touristtraveller.png";
+import lovingSummer from "@/public/images/lovinsummer.png";
 
 export const links = [
   {
@@ -124,6 +126,22 @@ export const projectsDataExcerpt = [
     tags: ["react native", "javascript", "expo"],
     imageUrl: bmeditation,
   },
+  {
+    id: "8",
+    title: "Tourist Traveller",
+    excerpt:
+      "A tourist traveler app that seamlessly connects users with curated recommendations for top global destinations, providing a personalized and convenient guide for unforgettable experiences.",
+    tags: ["react", "typescript"],
+    imageUrl: touristTraveller,
+  },
+  {
+    id: "9",
+    title: "Lovin Summer",
+    excerpt:
+      "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
+    tags: ["bootstrap", "html", "css", "javascript"],
+    imageUrl: lovingSummer,
+  },
 ];
 
 export const projectsData = [
@@ -213,6 +231,31 @@ export const projectsData = [
     link: "https://bmeditation-api-website.vercel.app/",
     collaborators: [],
   },
+  {
+    id: "8",
+    title: "Tourist Traveller",
+    excerpt:
+      "A tourist traveler app that seamlessly connects users with curated recommendations for top global destinations, providing a personalized and convenient guide for unforgettable experiences.",
+    tags: ["react", "typescript"],
+    imageUrl: touristTraveller,
+    link: "https://tourist-traveller.vercel.app/",
+    collaborators: [],
+  },
+  {
+    id: "9",
+    title: "Lovin Summer",
+    excerpt:
+      "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
+    tags: ["bootstrap", "html", "css", "javascript"],
+    imageUrl: lovingSummer,
+    link: "https://musical-kataifi-25a4e4.netlify.app/",
+    collaborators: [
+      { name: "João", github: "https://github.com/Joao4569" },
+      { name: "Juan", github: "https://github.com/jbocciadev" },
+      { name: "Benjamin", github: "https://github.com/Benohene" },
+      { name: "Jose", github: "https://github.com/devjldp" },
+    ],
+  },
 ];
 
 export const projectCategoriesData = [
@@ -223,7 +266,7 @@ export const projectCategoriesData = [
       "My favorite projects over the years! These highlight my proficiency in various languages and frameworks across front/backend development, highlighting my skills in crafting comprehensive full-stack applications.",
     imageUrl: showcase,
     icon: React.createElement(CgTrophy),
-    projects: ["5", "6", "7"],
+    projects: ["5", "6", "7", "8"],
   },
   {
     id: 2,
@@ -232,7 +275,7 @@ export const projectCategoriesData = [
       "Im addicted to hackathons! The ability to gain hands-on experience in teamwork, meeting challenging deadlines, and mastering the intricacies of Git version control—all while having a blast an making friends!",
     imageUrl: hackathon,
     icon: React.createElement(LuLaptop),
-    projects: ["1", "2", "3"],
+    projects: ["1", "2", "3", "9"],
   },
   {
     id: 3,
