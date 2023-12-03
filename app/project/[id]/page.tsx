@@ -2,7 +2,6 @@ import Tags from "@/components/ui/Tags";
 import TypeWriter from "@/components/ui/Typewriter";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import { escape } from "querystring";
 import { FunctionComponent } from "react";
 import { CgWebsite } from "react-icons/cg";
 import { FaCode, FaGithub } from "react-icons/fa";
@@ -63,19 +62,20 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
               Collaborators
             </span>
             <ul className="items-center">
-              {collaborators.map((collab, index) => (
-                <li key={index}>
-                  <a
-                    href={collab.github}
-                    aria-label={`Link to ${collab.name}'s Github`}
-                    target="_blank"
-                    className="flex items-center gap-2 text-lg"
-                  >
-                    <p className="font-bold">{collab.name}</p>
-                    <FaGithub />
-                  </a>
-                </li>
-              ))}
+              {collaborators &&
+                collaborators.map((collab, index) => (
+                  <li key={index}>
+                    <a
+                      href={collab.github}
+                      aria-label={`Link to ${collab.name}'s Github`}
+                      target="_blank"
+                      className="flex items-center gap-2 text-lg"
+                    >
+                      <p className="font-bold">{collab.name}</p>
+                      <FaGithub />
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
           <div>

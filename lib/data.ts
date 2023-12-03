@@ -1,6 +1,7 @@
 import React from "react";
 import { CgTrophy, CgWorkAlt } from "react-icons/cg";
-import { FaGamepad, FaReact } from "react-icons/fa";
+import { FaGamepad, FaPhoneSquare } from "react-icons/fa";
+import { BsGraphUpArrow } from "react-icons/bs";
 import { LuGraduationCap, LuLaptop } from "react-icons/lu";
 import showcase from "@/public/images/showcase.png";
 import hackathon from "@/public/images/hackathon.jpg";
@@ -14,6 +15,9 @@ import coolcoders from "@/public/images/coolcoders.png";
 import bmeditation from "@/public/images/bmeditaiton.png";
 import touristTraveller from "@/public/images/touristtraveller.png";
 import lovingSummer from "@/public/images/lovinsummer.png";
+import triviaTrumps from "@/public/images/triviatrumps.png";
+import codu from "@/public/images/codu.png";
+import ztm from "@/public/images/ztm.png";
 
 export const links = [
   {
@@ -36,36 +40,45 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
+
   {
-    name: "Contact",
-    hash: "#contact",
+    name: "Collab",
+    hash: "#collab",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Media Manager",
-    location: "Melbourne Australia",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
-    icon: React.createElement(FaReact),
-    date: "2017 - 2021",
-  },
-  {
-    title: "Digital Media FreeLance",
-    location: "Dublin, Ire",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
-  },
-  {
     title: "Code Institute",
-    location: "Dublin, Ire",
+    location: "Remote Student (Dublin, Ire)",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - Present",
+  },
+  {
+    title: "Digital Media Buyer Freelance",
+    location: "Remote (Dublin, Ire)",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Media Manager",
+    location: "Remote KingsGuardMedia (Melbourne, Aus / Stockholm Swe)",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+    icon: React.createElement(BsGraphUpArrow),
+    date: "2017 - 2021",
+  },
+  {
+    title: "Sales and Logisitics",
+    location: "Aussie Farmers Direct",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+    icon: React.createElement(FaPhoneSquare),
+    date: "2015 - 2016",
   },
 ] as const;
 
@@ -141,6 +154,14 @@ export const projectsDataExcerpt = [
       "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
     tags: ["bootstrap", "html", "css", "javascript"],
     imageUrl: lovingSummer,
+  },
+  {
+    id: "10",
+    title: "Trivia Trumps",
+    excerpt:
+      "Trivia Trumps is an engaging online platform where users answer questions across diverse categories to earn coveted trump cards.",
+    tags: ["html", "css", "javascript"],
+    imageUrl: triviaTrumps,
   },
 ];
 
@@ -256,6 +277,14 @@ export const projectsData = [
       { name: "Jose", github: "https://github.com/devjldp" },
     ],
   },
+  {
+    id: "10",
+    title: "Trivia Trumps",
+    excerpt:
+      "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
+    tags: ["html", "css", "javascript"],
+    imageUrl: triviaTrumps,
+  },
 ];
 
 export const projectCategoriesData = [
@@ -284,7 +313,22 @@ export const projectCategoriesData = [
       "My love for games sparked a journey into game development which greatly enhanced my skills, knowledge, and passion for programming as I ventured into creating my own gaming experiences.",
     imageUrl: gameDev,
     icon: React.createElement(FaGamepad),
-    projects: ["1", "2", "4"],
+    projects: ["1", "2", "4", "10"],
+  },
+] as const;
+
+export const stackData = [
+  {
+    title: "Mern",
+    tech: ["TypeScript", "React", "Next.js", "MongoDB", "Firebase"],
+  },
+  {
+    title: "Django",
+    tech: ["Django", "Django Rest", "React", "SQL"],
+  },
+  {
+    title: "Mobile",
+    tech: ["React Native", "Firebase", "Expo"],
   },
 ] as const;
 
@@ -301,11 +345,23 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
   "Django",
+  "Django Rest",
   "Framer Motion",
 ] as const;
+
+export const collabData = [
+  { title: "Codu", imageUrl: codu, link: "https://github.com/codu-code/codu" },
+  { title: "ZTM", imageUrl: ztm, link: "https://github.com/zero-to-mastery" },
+] as const;
+
+export const hackathonBadges = [
+  "https://api.eu.badgr.io/public/assertions/6LVA946fQ6CwOlUAlAWIGA",
+  "https://api.eu.badgr.io/public/assertions/eMjGYMdURiybvn2fa0awOQ",
+  "https://api.eu.badgr.io/public/assertions/UgSbdch7Ql6LIF95L52c4Q",
+  "https://api.eu.badgr.io/public/assertions/f6fBc6MWT-qt1aTr8HWl8A",
+  "https://api.eu.badgr.io/public/assertions/lbxrG8kiTU24EUT-TF7D5g",
+];
