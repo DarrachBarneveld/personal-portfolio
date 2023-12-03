@@ -27,7 +27,7 @@ const About: FunctionComponent = () => {
       <p className="mb-3">
         I enrolled in a coding bootcamp and learned{" "}
         <strong>full-stack web development</strong>.{" "}
-        <em>My favorite part of programming</em> is the problem-solving aspect.
+        <em>My favourite part of programming</em> is the problem-solving aspect.
         I <span className="underline">love</span> the feeling of finally
         figuring out a solution to a problem. My core stack is{" "}
         <strong>React, Next.js, Node.js, and MongoDB</strong> though I also love{" "}
@@ -37,8 +37,8 @@ const About: FunctionComponent = () => {
         developer.
       </p>
       <p>
-        <em>When I'm not coding</em>, I enjoy playing chess, watching movies,
-        going for long walks in nature. I also enjoy learning about{" "}
+        <em>When I&apos;m not coding</em>, I enjoy playing chess, watching
+        movies, going for long walks in nature. I also enjoy learning about{" "}
         <strong>history and philosophy</strong>.
       </p>
     </motion.section>

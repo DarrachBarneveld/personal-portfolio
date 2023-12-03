@@ -69,7 +69,7 @@ const Intro: FunctionComponent = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <strong>Hey I am Darrach. </strong> {`I'm a `}
+        <strong>Hey I am Darrach. </strong> I&apos;m a{" "}
         <strong>full-stack developer</strong> with{" "}
         <strong className="font-bold">2 years</strong> of experience. I enjoy
         building <em>sites &#38; apps</em>. My focus is{" "}
