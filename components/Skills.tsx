@@ -7,6 +7,7 @@ import { useSectionInView } from "@/hooks/hooks";
 import { AnimatePresence, motion } from "framer-motion";
 import { staggeredFadeUp } from "@/animations/variants";
 import { LuArrowBigLeft, LuArrowBigRight } from "react-icons/lu";
+import StackCard from "./ui/StackCard";
 
 const Skills: FunctionComponent = () => {
   const { ref } = useSectionInView("Skills");
@@ -86,34 +87,10 @@ const Skills: FunctionComponent = () => {
                 <LuArrowBigLeft />
               </button>
             </div>
-            <ul className="text-l2 [&>*:nth-child(2)]:border-red-green flex flex-wrap gap-4 [&>*:nth-child(1)>p]:bg-blue-700 [&>*:nth-child(1)]:border-blue-400 [&>*:nth-child(1)]:bg-blue-100 [&>*:nth-child(2)>p]:bg-green-700 [&>*:nth-child(2)]:border-green-400 [&>*:nth-child(2)]:bg-green-100 [&>*:nth-child(3)>p]:bg-red-700 [&>*:nth-child(3)]:border-red-400  [&>*:nth-child(3)]:bg-red-100">
-              {stackData.map((stack, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="mx-auto min-w-[16rem] rounded-lg border-2"
-                  >
-                    <p className="m-3 rounded-xl border border-black/20 px-5 py-3 font-extrabold text-white">
-                      {stack.title.toUpperCase()}
-                    </p>
-                    {stack.tech.map((skill, index) => (
-                      <motion.li
-                        className="m-3 rounded-xl border border-black/20 bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
-                        key={index}
-                        variants={staggeredFadeUp}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{
-                          once: true,
-                        }}
-                        custom={index}
-                      >
-                        {skill}
-                      </motion.li>
-                    ))}
-                  </div>
-                );
-              })}
+            <ul className="[&>*:nth-child(2)]:border-red-green to-slate-9000 from-slate-00 flex flex-wrap gap-4 text-xl [&>*:nth-child(1)>header]:bg-blue-300 [&>*:nth-child(1)]:border-blue-400 [&>*:nth-child(1)]:bg-gradient-to-b [&>*:nth-child(2)>header]:bg-green-300 [&>*:nth-child(2)]:border-green-400 [&>*:nth-child(2)]:bg-gradient-to-b [&>*:nth-child(3)>header]:bg-red-300 [&>*:nth-child(3)]:border-red-400 [&>*:nth-child(3)]:bg-gradient-to-b">
+              {stackData.map((stack, index) => (
+                <StackCard {...stack} key={index} />
+              ))}
             </ul>
           </motion.div>
         </AnimatePresence>

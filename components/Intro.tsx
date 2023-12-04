@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
-import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
 import { LuDownload } from "react-icons/lu";
 import { useSectionInView } from "@/hooks/hooks";
