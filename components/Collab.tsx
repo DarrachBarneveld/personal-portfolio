@@ -32,6 +32,7 @@ const Collab: FunctionComponent = () => {
         <ul className="flex list-none">
           {collabData.map((collab, index) => (
             <motion.li
+              key={index}
               className="m-3 mx-auto h-24 w-36 overflow-hidden"
               variants={staggeredFadeUp}
               initial="initial"
@@ -75,9 +76,11 @@ const Collab: FunctionComponent = () => {
             className="mx-auto"
             href={hack}
           >
-            <img
+            <Image
+              alt="hackathon badge image"
               width={140}
               height={140}
+              quality={95}
               src={`${hack}/image`}
               className="transition-all duration-300 hover:scale-95 focus:scale-95"
             />
