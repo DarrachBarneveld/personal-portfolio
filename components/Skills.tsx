@@ -87,7 +87,7 @@ const Skills: FunctionComponent = () => {
                 <LuArrowBigLeft />
               </button>
             </div>
-            <ul className="[&>*:nth-child(2)]:border-red-green to-slate-9000 from-slate-00 flex flex-wrap gap-4 text-xl [&>*:nth-child(1)>header]:bg-blue-300 [&>*:nth-child(1)]:border-blue-400 [&>*:nth-child(1)]:bg-gradient-to-b [&>*:nth-child(2)>header]:bg-green-300 [&>*:nth-child(2)]:border-green-400 [&>*:nth-child(2)]:bg-gradient-to-b [&>*:nth-child(3)>header]:bg-red-300 [&>*:nth-child(3)]:border-red-400 [&>*:nth-child(3)]:bg-gradient-to-b">
+            <ul className="flex flex-wrap gap-4 text-xl [&>*:nth-child(1)>header]:bg-blue-300 [&>*:nth-child(1)]:border-blue-400 [&>*:nth-child(2)>header>h2]:text-slate-50 [&>*:nth-child(2)>header]:bg-slate-800 [&>*:nth-child(2)]:border-slate-900 [&>*:nth-child(3)>header]:bg-green-300 [&>*:nth-child(3)]:border-green-400 [&>*:nth-child(4)>header]:bg-red-300 [&>*:nth-child(4)]:border-red-400">
               {stackData.map((stack, index) => (
                 <StackCard {...stack} key={index} />
               ))}

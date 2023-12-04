@@ -320,7 +320,11 @@ export const projectCategoriesData = [
 export const stackData = [
   {
     title: "Mern",
-    tech: ["TypeScript", "React", "Next.js", "MongoDB", "Firebase"],
+    tech: ["TypeScript", "React", "Express", "MongoDB", "NodeJS"],
+  },
+  {
+    title: "NextJs",
+    tech: ["TypeScript", "React", "Next.js", "Firebase", "Prisma"],
   },
   {
     title: "Django",

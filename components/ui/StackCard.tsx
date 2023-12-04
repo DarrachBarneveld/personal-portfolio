@@ -19,7 +19,7 @@ const StackCard: FunctionComponent<StackCardProps> = ({ title, tech }) => {
             key={index}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: index * 0.5 }}
+            transition={{ delay: index * 0.2 }}
           >
             <div className="mr-3 rounded-full bg-green-300 p-1">
               <svg
