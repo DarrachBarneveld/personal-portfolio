@@ -39,7 +39,9 @@ const About: FunctionComponent = () => {
       <p>
         <em>When I&apos;m not coding</em>, I enjoy playing chess, watching
         movies, going for long walks in nature. I also enjoy learning about{" "}
-        <strong>history and philosophy</strong>.
+        <strong>history and philosophy</strong>. Sometimes I believe myself to
+        be musically challanged but with the right{" "}
+        <strong>minimal techno</strong> I can code for days 🎧
       </p>
     </motion.section>
   );
