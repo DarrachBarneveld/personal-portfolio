@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["holopin.me"],
+    domains: ["holopin.me", "api.eu.badgr.io"],
   },
 };
 
