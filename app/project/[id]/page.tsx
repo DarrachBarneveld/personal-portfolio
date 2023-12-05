@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Tags from "@/components/ui/Tags";
 import TypeWriter from "@/components/ui/Typewriter";
 import { projectsData } from "@/lib/data";
@@ -68,27 +67,39 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           <div className="mb-4">
             <Tags tags={tags} />
           </div>
-          <div className="mb-4">
-            <span className="font-bold text-gray-700 dark:text-gray-300">
-              Collaborators
-            </span>
-            <ul className="items-center">
-              {collaborators &&
-                collaborators.map((collab, index) => (
-                  <li key={index}>
-                    <a
-                      href={collab.github}
-                      aria-label={`Link to ${collab.name}'s Github`}
-                      target="_blank"
-                      className="flex items-center gap-2 text-lg"
-                    >
-                      <p className="font-bold">{collab.name}</p>
-                      <FaGithub />
-                    </a>
-                  </li>
-                ))}
-            </ul>
-          </div>
+
+          {title === "B-Meditation" && (
+            <p className="mb-4 rounded-md bg-red-200 p-1 text-center text-red-700">
+              <strong>
+                Avoid using the API, it's undergoing maintenance. Download and
+                use the app via the Google Play Store link.
+              </strong>
+            </p>
+          )}
+          {collaborators.length != 0 && (
+            <div className="mb-4">
+              <span className="font-bold text-gray-700 dark:text-gray-300">
+                Collaborators
+              </span>
+              <ul className="items-center">
+                {collaborators &&
+                  collaborators.map((collab, index) => (
+                    <li key={index}>
+                      <a
+                        href={collab.github}
+                        aria-label={`Link to ${collab.name}'s Github`}
+                        target="_blank"
+                        className="flex items-center gap-2 text-lg"
+                      >
+                        <p className="font-bold">{collab.name}</p>
+                        <FaGithub />
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          )}
+
           <div>
             <span className="font-bold text-gray-700 dark:text-gray-300">
               Description:
