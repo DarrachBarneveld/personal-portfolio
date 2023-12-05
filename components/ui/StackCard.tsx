@@ -6,13 +6,13 @@ type StackCardProps = (typeof stackData)[number];
 
 const StackCard: FunctionComponent<StackCardProps> = ({ title, tech }) => {
   return (
-    <div className="mx-auto h-full min-w-[300px] overflow-hidden rounded-lg border-2 shadow-xl">
-      <header className="p-4 pb-6 pt-10 text-center leading-tight">
-        <h2 className="text-3xl font-bold uppercase tracking-wide text-gray-700">
+    <div className="h-full overflow-hidden rounded-lg border-2 bg-gray-100 shadow-xl">
+      <header className="p-2 pb-6 pt-10 text-center leading-tight">
+        <h2 className="text-2xl font-bold uppercase tracking-wide text-gray-700">
           {title}
         </h2>
       </header>
-      <ul className="flex flex-col bg-gray-100 p-6">
+      <ul className="flex flex-col  p-3 lg:p-6">
         {tech.map((skill, index) => (
           <motion.li
             className="mb-3 inline-flex flex-1 items-center"

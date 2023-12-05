@@ -52,7 +52,7 @@ export const experiencesData = [
     title: "Code Institute",
     location: "Remote Student (Dublin, Ire)",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+      "Undertaking a diploma program in web development full-time, which is an industry recognised qualification in Ireland taught to industry standards with a focus on fostering self-reliance and practical skills.",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - Present",
   },
@@ -60,7 +60,7 @@ export const experiencesData = [
     title: "Digital Media Buyer Freelance",
     location: "Remote (Dublin, Ire)",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+      "Engaged in consulting services for marketing strategies across various social media platforms. Provided hands-on marketing support, with a primary focus on enhancing the performance of advertising return on investment (ROI) for predominantly small businesses.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2022",
   },
@@ -68,7 +68,7 @@ export const experiencesData = [
     title: "Media Manager",
     location: "Remote KingsGuardMedia (Melbourne, Aus / Stockholm Swe)",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+      "Oversaw the lead generation team serving US clients in the Education and Health sectors, managing creative aspects, accounting, task assignments, and ensuring achievement of key performance indicators (KPIs). This role required coordination between creative, operational, and technical teams, contributing to the team's success in meeting organisational goals and client expectations.",
     icon: React.createElement(BsGraphUpArrow),
     date: "2017 - 2021",
   },
@@ -76,7 +76,7 @@ export const experiencesData = [
     title: "Sales and Logisitics",
     location: "Aussie Farmers Direct",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+      "Engaged in sales and customer support, extending assistance to the B2B logistical orders team. Met and surpassed daily/weekly KPIs, undertook special assignment projects, and delivered essential business logistical support, including order management, for B2B customers and restaurants in the Greater Melbourne region.",
     icon: React.createElement(FaPhoneSquare),
     date: "2015 - 2016",
   },
