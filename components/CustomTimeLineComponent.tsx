@@ -7,6 +7,8 @@ type CustomTimeLineComponentProps = {
   item: Experience;
 };
 
+function componentStyling(item: string) {}
+
 const CustomTimeLineComponent: FunctionComponent<
   CustomTimeLineComponentProps
 > = ({ item }) => {
@@ -35,7 +37,6 @@ const CustomTimeLineComponent: FunctionComponent<
       date={item.date}
       icon={item.icon}
       iconStyle={{
-        background: "white",
         fontSize: "1.5rem",
       }}
     >

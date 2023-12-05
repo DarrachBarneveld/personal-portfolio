@@ -12,13 +12,13 @@ interface PageProps {
 }
 
 const page: FunctionComponent<PageProps> = ({ params }) => {
-  const { imageUrl, title, excerpt, collaborators, link, tags } =
+  const { imageUrl, title, excerpt, collaborators, link, tags, description } =
     projectsData.find((project) => project.id === params.id)!;
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div className="-mx-4 flex flex-col md:flex-row">
         <div className="px-4 md:flex-1">
-          <div className="mb-4 h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700">
+          <div className="mb-4 h-[460px] overflow-hidden rounded-lg bg-gray-300 dark:bg-gray-700">
             <Image
               className="h-full w-full object-cover"
               src={imageUrl}
@@ -51,9 +51,11 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           <h2 className="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
             {title}
           </h2>
-          <p className="mb-4 text-sm text-gray-600 dark:text-gray-300">
-            {excerpt}
-          </p>
+          <TypeWriter
+            text={excerpt}
+            className="mb-4 mt-2 text-base text-gray-600 dark:text-gray-300"
+            delay={10}
+          />
 
           <div className="mb-4">
             <Tags tags={tags} />
@@ -81,13 +83,11 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           </div>
           <div>
             <span className="font-bold text-gray-700 dark:text-gray-300">
-              Product Description:
+              Description:
             </span>
-            <TypeWriter
-              text={excerpt}
-              className="mt-2 text-sm text-gray-600 dark:text-gray-300"
-              delay={10}
-            />
+            <p className="text-sm leading-6 text-gray-600 dark:text-gray-300">
+              {description}
+            </p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { CgTrophy, CgWorkAlt } from "react-icons/cg";
-import { FaGamepad, FaPhoneSquare } from "react-icons/fa";
+import { FaGamepad, FaPhone } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { LuGraduationCap, LuLaptop } from "react-icons/lu";
 import showcase from "@/public/images/showcase.png";
@@ -77,7 +77,7 @@ export const experiencesData = [
     location: "Aussie Farmers Direct",
     description:
       "Engaged in sales and customer support, extending assistance to the B2B logistical orders team. Met and surpassed daily/weekly KPIs, undertook special assignment projects, and delivered essential business logistical support, including order management, for B2B customers and restaurants in the Greater Melbourne region.",
-    icon: React.createElement(FaPhoneSquare),
+    icon: React.createElement(FaPhone),
     date: "2015 - 2016",
   },
 ] as const;
@@ -178,6 +178,8 @@ export const projectsData = [
       { name: "Tanguy", github: "https://github.com/tlalexandre" },
       { name: "Devan", github: "https://github.com/devancadman" },
     ],
+    description:
+      "This game was developed for the Dev Games hackathon under my hobby account, Barneslow. We had approximately a month to create a functional game, using any software of our choice. We decided to stick with a browser-based game and opted for PhaserJS. The learning experience and collaboration were remarkable, given that we were able to assemble our own team. I served as the principal architect for the game's logic, while others contributed to UI and design. Despite encountering significant deployment challenges with Vite, MPA, and Netlify, we managed to secure the 1st position, a pleasant surprise considering the hurdles we faced.",
   },
   {
     id: "2",
@@ -194,6 +196,8 @@ export const projectsData = [
       { name: "Shida", github: "https://github.com/Shida18719" },
       { name: "Yash", github: "https://github.com/ysgurjar" },
     ],
+    description:
+      "This project was developed using KaboomJS during Code Institute's September Retro Quest Hackathon. My randomly assigned team was tasked with building a game using a JS library of their choice within a 5-day timeframe. I took on the responsibility of overseeing the logic and architecture of the game, and additionally, I was nominated as the scrum master for the hackathon. The creative input and dedication of the team played a pivotal role in securing our victory.",
   },
   {
     id: "3",
