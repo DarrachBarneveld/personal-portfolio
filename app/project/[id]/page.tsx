@@ -71,7 +71,7 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           {title === "B-Meditation" && (
             <p className="mb-4 rounded-md bg-red-200 p-1 text-center text-red-700">
               <strong>
-                Avoid using the API, it's undergoing maintenance. Download and
+                Avoid using the API, it is undergoing maintenance. Download and
                 use the app via the Google Play Store link.
               </strong>
             </p>
