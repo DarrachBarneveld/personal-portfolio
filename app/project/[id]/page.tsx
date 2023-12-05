@@ -12,8 +12,16 @@ interface PageProps {
 }
 
 const page: FunctionComponent<PageProps> = ({ params }) => {
-  const { imageUrl, title, excerpt, collaborators, link, tags, description } =
-    projectsData.find((project) => project.id === params.id)!;
+  const {
+    imageUrl,
+    title,
+    excerpt,
+    collaborators,
+    link,
+    tags,
+    description,
+    github,
+  } = projectsData.find((project) => project.id === params.id)!;
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div className="-mx-4 flex flex-col md:flex-row">
@@ -29,7 +37,7 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           <div className="-mx-2 mb-4 flex">
             <div className="w-1/2 px-2">
               <a
-                href="https://github.com/DarrachBarneveld"
+                href={github}
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700"
                 target="_blank"
               >

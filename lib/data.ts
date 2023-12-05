@@ -174,6 +174,7 @@ export const projectsData = [
     tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
     imageUrl: neonDefence,
     link: "https://neon-defence.netlify.app/",
+    github: "https://github.com/Barneslow/neon-defence",
     collaborators: [
       { name: "Tanguy", github: "https://github.com/tlalexandre" },
       { name: "Devan", github: "https://github.com/devancadman" },
@@ -189,6 +190,7 @@ export const projectsData = [
     tags: ["javascript", "kaboomjs", "tiled"],
     imageUrl: retroMashup,
     link: "https://retro-mashup-mayhem.netlify.app/",
+    github: "https://github.com/DarrachBarneveld/Retro-Mashup-Mayhem",
     collaborators: [
       { name: "Dan", github: "https://github.com/DanMorriss" },
       { name: "Sandra", github: "https://github.com/SandraBergstrom" },
@@ -207,6 +209,7 @@ export const projectsData = [
     tags: ["javascript", "html", "css", "firebase", "bootstrap"],
     imageUrl: lepreTrack,
     link: "https://lepretrack.netlify.app/",
+    github: "https://github.com/DarrachBarneveld/Lepre-Track",
     collaborators: [
       { name: "Shane", github: "https://github.com/Shane-Donlon" },
       { name: "Adam", github: "https://github.com/adammkeane" },
@@ -214,6 +217,8 @@ export const projectsData = [
       { name: "Amanda", github: "https://github.com/apita1423" },
       { name: "Aurelien", github: "https://github.com/AMJL-16" },
     ],
+    description:
+      "This project was undertaken for the Code Institute/Soda Socials in-person hackathon titled Tech for a Greener Tomorrow: Hackathon for Sustainable Solutions. The challenge was to conceptualize an application that would empower individuals to contribute to a more sustainable future. Inspired by Fitbit, we opted for a green activity tracking app. User data was correlated with an Irish average to determine their green level, and badges were assigned based on their overall score. Firebase served as the primary database. Additionally, users had access to valuable information on improving their score through an integrated OpenAI chatbot. I held the role of scrum master for this project.",
   },
   {
     id: "4",
@@ -223,7 +228,10 @@ export const projectsData = [
     tags: ["react", "socket.io", "node.js", "express", "typescript"],
     imageUrl: lotrPokemon,
     link: "https://lotr-pokemon.netlify.app",
+    github: "https://github.com/DarrachBarneveld/lotr-pokemon-multi",
     collaborators: [],
+    description:
+      "This was a passion project initially created on my hobby account, Barneslow. The goal was to develop a Lord of the Rings-themed Pokémon battle card game that could be enjoyed online with friends. Players would randomly select cards and engage in battles with each other. The project features real-time user interaction, chat, a reactive multiplayer lobby, and artistic design. It was modeled after the existing single-player version, and future functionality for creating user decks is still pending implementation.",
   },
 
   {
@@ -234,7 +242,10 @@ export const projectsData = [
     tags: ["python", "django", "bootstrap"],
     imageUrl: coolcoders,
     link: "https://coolcoders-b69260c4617a.herokuapp.com/",
+    github: "https://github.com/DarrachBarneveld/CoolCoders-PP4",
     collaborators: [],
+    description:
+      "This served as my fourth project, meeting industry standards, developed as part of my diploma in full-stack development at the Code Institute. The motivation behind this project was to cultivate a community on Coolcoders, addressing a personal gap where I often find myself isolated due to the lack of shared passion for programming among my friends. Consequently, extending my network through meetups and online forums/communities has been crucial. The project aimed to establish a coding community where users could post articles, review each other's work, and earn engagement scores. It features comprehensive profile data, full CRUD functionality, and marked my inaugural full-stack Python project.",
   },
   {
     id: "6",
@@ -244,7 +255,10 @@ export const projectsData = [
     tags: ["react", "typescript", "bootstrap", "firebase"],
     imageUrl: lepreTrackV2,
     link: "https://lepretrackv2.netlify.app/",
+    github: "https://github.com/DarrachBarneveld/LepreTrackV2",
     collaborators: [],
+    description:
+      "This project evolved from the foundation laid by lepreTrack v1. During an in-person hackathon, my team and I invested significant effort in creating a well-fleshed-out and innovative project. While the overall experience was rewarding, we were somewhat disheartened by the judges' scores. In response, I acknowledged that a successful tech project encompasses more than just advanced and complex code. Team agility, effective project pitching to non-tech audiences, and ease of accessibility are equally crucial. To address this realization, I took it upon myself to rectify the setback by rebuilding the project using the latest front-end tools, addressing any bugs, and paying homage to the collaborative efforts of the team.",
   },
   {
     id: "7",
@@ -254,7 +268,10 @@ export const projectsData = [
     tags: ["react native", "javascript", "expo"],
     imageUrl: bmeditation,
     link: "https://bmeditation-api-website.vercel.app/",
+    github: "https://github.com/Barneslow/bmeditation",
     collaborators: [],
+    description:
+      "One of my most significant achievements was successfully launching an application on the Google Play Store, named B-Meditation. Regrettably, due to budget constraints, I couldn't afford the Apple Developer package, limiting its availability to Android devices. Nonetheless, this project served as a valuable learning experience in building an industry-standard mobile app, utilizing React Native for development. Motivated by the challenges posed by the COVID-19 pandemic on mental health, including my own, I aimed to create an app that fostered mindfulness and meditation. The content was enriched by delving deep into philosophy and drawing wisdom from historical figures. All quotes and content were sourced from a vast collection of 500k CSV quotes from an educational open collection, with a focus on minimizing file size by selecting quotes from my favorite authors.",
   },
   {
     id: "8",
@@ -264,7 +281,10 @@ export const projectsData = [
     tags: ["react", "typescript"],
     imageUrl: touristTraveller,
     link: "https://tourist-traveller.vercel.app/",
+    github: "https://github.com/DarrachBarneveld/tourist-traveller",
     collaborators: [],
+    description:
+      "In the early months of 2023, I made the pivotal decision to fully transition into a new career. Before embarking on this transformative journey, I yearned for an inspiring trip to set the tone. Uncertain about the destination or activities, I simply wanted to be inspired. Turning to Google for recommended places, I found myself creating an application to streamline the process. Leveraging the Google Places API for recommendations and Leaflet for map display, I recently reconstructed the project using Next.js. While the core functionality has been revamped, the addition of a favoriting feature is still pending implementation.",
   },
   {
     id: "9",
@@ -274,12 +294,15 @@ export const projectsData = [
     tags: ["bootstrap", "html", "css", "javascript"],
     imageUrl: lovingSummer,
     link: "https://musical-kataifi-25a4e4.netlify.app/",
+    github: "https://github.com/Joao4569/lovin_summer",
     collaborators: [
       { name: "João", github: "https://github.com/Joao4569" },
       { name: "Juan", github: "https://github.com/jbocciadev" },
       { name: "Benjamin", github: "https://github.com/Benohene" },
       { name: "Jose", github: "https://github.com/devjldp" },
     ],
+    description:
+      "This project was developed for Code Institute's Summer of Code hackathon. Our team was challenged with creating an application that encouraged people, including myself and fellow developers, to embrace outdoor activities and savor the summer season. Instead of opting for a straightforward integration of Google Maps, I aspired to craft a fully functional and responsive map using Leaflet, incorporating data from Failte Ireland/Tourism Ireland. The CSV data was parsed and utilized to render markers based on activity type, location, and distance. With the collaborative efforts of the team, we clinched the 2nd place, and my primary role centered around the construction of the custom maps.",
   },
   {
     id: "10",
@@ -288,6 +311,11 @@ export const projectsData = [
       "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
     tags: ["html", "css", "javascript"],
     imageUrl: triviaTrumps,
+    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
+    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    collaborators: [],
+    description:
+      "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
   },
 ];
 
