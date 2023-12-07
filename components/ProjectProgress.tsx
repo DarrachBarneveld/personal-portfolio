@@ -28,7 +28,7 @@ const ProjectProgress: FunctionComponent<ProjectProgressProps> = ({
   const widthColour = getColorBasedOnPercentage(progress);
 
   return (
-    <div className="relative w-72 overflow-hidden rounded-xl bg-white p-4 shadow-lg md:w-96">
+    <div className="relative h-full w-72 overflow-hidden rounded-xl bg-white p-4 shadow-lg md:w-96">
       <div className="mb-2 flex items-center border-b-2 py-2">
         <h3 className="font-medium">{title}</h3>
       </div>
@@ -40,7 +40,7 @@ const ProjectProgress: FunctionComponent<ProjectProgressProps> = ({
         <p className="mb-4 text-sm text-slate-600">{description}</p>
       </div>
 
-      <div className="mb-4 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+      <div className="mb-4 h-2.5 w-full self-end rounded-full bg-gray-200 dark:bg-gray-700">
         <div
           className={`h-2.5 rounded-full ${widthColour} dark:bg-gray-300`}
           style={{ width: `${progress}%` }}
