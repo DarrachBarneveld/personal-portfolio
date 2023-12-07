@@ -349,6 +349,32 @@ export const projectCategoriesData = [
   },
 ] as const;
 
+export const projectProgressData = [
+  {
+    title: "CI Swag Store",
+    description:
+      "A mock e-commerce store for selling Code Institue swag to students, staff and other customers.",
+    tags: ["django", "stripe", "aws"],
+    expected: "1 week",
+    progress: 90,
+  },
+  {
+    title: "Emotional Colour Wheel / mcm",
+    description:
+      "A machine learning project designed to analyze users' emotional responses to music and associate each emotion with a specific color.",
+    tags: ["react", "spotify api", "django rest"],
+    progress: 20,
+    expected: "2 months",
+  },
+  {
+    title: "React Stripe Shop Template",
+    description:
+      "A template for creating a basic and secure e-commerce shop using stripe payments and firebase database/authentication. Allows for quick duplication of ecom stores.",
+    tags: ["react", "stripe", "firebase"],
+    expected: "3 week",
+    progress: 50,
+  },
+];
 export const stackData = [
   {
     title: "Mern",

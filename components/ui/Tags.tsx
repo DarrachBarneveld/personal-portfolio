@@ -28,6 +28,10 @@ export const backgroundTagVariants = {
   python: "bg-[#2e6693]",
   "react native": "bg-[#48a5d2]",
   expo: "bg-[#02001f]",
+  aws: "bg-[#f0921c]",
+  stripe: "bg-[#6058f7]",
+  ["spotify api"]: "bg-[#22cf5d]",
+  ["django rest"]: "bg-[#a30000]",
 };
 
 interface TagsProps {
