@@ -28,19 +28,19 @@ const PipelineCard: FunctionComponent<PipelineCardProps> = ({
   const widthColour = getColorBasedOnPercentage(progress);
 
   return (
-    <div className="max-w-72 relative  h-full w-full overflow-hidden rounded-xl bg-white p-4 shadow-lg md:w-96">
+    <div className="max-w-72 relative flex h-full w-full flex-col overflow-hidden rounded-xl bg-white p-4 shadow-lg md:w-96">
       <div className="mb-2 flex items-center border-b-2 py-2">
         <h3 className="font-medium">{title}</h3>
       </div>
-      <div className="w-full">
+      <div className="w-full flex-1">
         <Tags tags={tags} />
-        <p className="mb-2 text-xs font-medium text-blue-600">
+        <p className="mb-2 mt-1 text-xs font-medium text-blue-600">
           Expected: {expected}
         </p>
         <p className="mb-4 text-sm text-slate-600">{description}</p>
       </div>
 
-      <div className="mb-4 h-2.5 w-full self-end rounded-full bg-gray-200">
+      <div className="mb-4 h-2.5 w-full rounded-full bg-gray-200">
         <div
           className={`h-2.5 rounded-full ${widthColour} `}
           style={{ width: `${progress}%` }}

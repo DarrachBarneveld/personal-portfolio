@@ -353,7 +353,7 @@ export const projectProgressData = [
   {
     title: "CI Swag Store",
     description:
-      "A mock e-commerce store for selling Code Institue swag to students, staff and other customers.",
+      "A mock online retail platform designed to offer Code Institute merchandise to students, faculty, and other potential customers.",
     tags: ["django", "stripe", "aws"],
     expected: "1 week",
     progress: 90,
@@ -369,7 +369,7 @@ export const projectProgressData = [
   {
     title: "React Stripe Shop Template",
     description:
-      "A template for creating a basic and secure e-commerce shop using stripe payments and firebase database/authentication. Allows for quick duplication of ecom stores.",
+      "A blueprint for establishing a fundamental and secure online shopping platform utilizing Stripe payments and Firebase for database/authentication. Facilitates the swift replication of e-commerce stores.",
     tags: ["react", "stripe", "firebase"],
     expected: "3 week",
     progress: 50,
