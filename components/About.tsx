@@ -32,9 +32,10 @@ const About: FunctionComponent = () => {
       <p className="mb-3">
         My primary tech stack includes{" "}
         <strong>React, Next.js, Node.js, and MongoDB/Firebase</strong> , but
-        I've increasingly gravitated towards Pythonic development, particularly
-        utilizing <strong>Django and the Django Rest Framework </strong> for
-        larger-scale and more
+        I&apos;ve increasingly gravitated towards Pythonic development,
+        particularly utilizing{" "}
+        <strong>Django and the Django Rest Framework </strong> for larger-scale
+        and more
         <em>industry-secure</em> projects.
       </p>
       <p>
