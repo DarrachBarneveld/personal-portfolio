@@ -115,7 +115,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
               <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.3 * index }}
+                transition={{ delay: 0.1 * index }}
                 className="group"
                 key={index}
               >
