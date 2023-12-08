@@ -7,6 +7,7 @@ import { projectCategoriesData, projectsDataExcerpt } from "@/lib/data";
 import { AnimatePresence, motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { IoIosCloseCircle } from "react-icons/io";
+import { zoomOut } from "@/animations/variants";
 
 function categoryColor(id: number) {
   let iconColor = "";
@@ -93,10 +94,11 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
       ) : (
         <motion.div
           key="containerDiv"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ scale: 0.7, opacity: 0, transition: { duration: 0.15 } }}
-          className={`container relative inline-block`}
+          variants={zoomOut}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className={`container relative inline-block `}
         >
           <button
             className="absolute top-3 text-4xl capitalize text-indigo-600 transition-colors duration-200 hover:text-indigo-900 hover:underline"
