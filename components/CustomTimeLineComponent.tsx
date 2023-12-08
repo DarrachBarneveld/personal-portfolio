@@ -42,9 +42,7 @@ const CustomTimeLineComponent: FunctionComponent<
     >
       <h3 className="font-semibold capitalize">{item.title}</h3>
       <p className="!mt-0 font-normal">{item.location}</p>
-      <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        {item.description}
-      </p>
+      <p className="!mt-1 !font-normal text-gray-700 ">{item.description}</p>
       <div className="absolute bottom-0 h-2 w-2" ref={ref}></div>
     </VerticalTimelineElement>
   );

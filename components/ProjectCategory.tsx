@@ -6,7 +6,7 @@ import ScrollViewWrapper from "./ui/ScrollViewWrapper";
 import { projectCategoriesData, projectsDataExcerpt } from "@/lib/data";
 import { AnimatePresence, motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import { LuArrowBigLeft } from "react-icons/lu";
+import { IoIosCloseCircle } from "react-icons/io";
 
 function categoryColor(id: number) {
   let iconColor = "";
@@ -96,15 +96,15 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ scale: 0.7, opacity: 0, transition: { duration: 0.15 } }}
-          className={`container relative rounded-2xl border  border-indigo-600 bg-indigo-50 p-2`}
+          className={`container relative inline-block`}
         >
           <button
-            className=" absolute inline-flex transform rounded-full bg-blue-300 p-2 text-2xl capitalize text-blue-700 transition-colors duration-200 hover:text-white hover:underline"
+            className="absolute top-3 text-4xl capitalize text-indigo-600 transition-colors duration-200 hover:text-indigo-900 hover:underline"
             onClick={() => setShowProjects(false)}
           >
-            <LuArrowBigLeft />
+            <IoIosCloseCircle />
           </button>
-          <h2 className="mx-auto my-3 w-fit border-b border-indigo-600 border-opacity-30 text-3xl font-bold text-indigo-600">
+          <h2 className="mx-auto my-3 w-fit border-b border-indigo-600 border-opacity-30 text-3xl font-bold text-indigo-600 md:block">
             {title}
           </h2>
 

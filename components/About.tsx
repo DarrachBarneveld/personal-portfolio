@@ -19,29 +19,29 @@ const About: FunctionComponent = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in <strong>Science</strong>, I decided to
-        travel the world and found myself working in digital marketing for
-        years. However during the pandameic I discovered a passion for
-        programming and in late 2022 decided to take things more serious.{" "}
+        After graduating from <strong>UCD</strong> with <strong>Science</strong>{" "}
+        degree and <em>7 years </em>immersed in the realms of{" "}
+        <strong>digital marketing</strong> and <strong>sales</strong>, I took a
+        decisive step to transition fully into the <strong>tech</strong>{" "}
+        industry. The foundational knowledge of <strong>HTML</strong>,{" "}
+        <strong>CSS</strong>, and <strong>JavaScript </strong>
+        acquired in digital marketing served as a catalyst, propelling me into a
+        more <em>profound</em> exploration of{" "}
+        <strong>full-stack development.</strong>
       </p>
       <p className="mb-3">
-        I enrolled in a coding bootcamp and learned{" "}
-        <strong>full-stack web development</strong>.{" "}
-        <em>My favourite part of programming</em> is the problem-solving aspect.
-        I <span className="underline">love</span> the feeling of finally
-        figuring out a solution to a problem. My core stack is{" "}
-        <strong>React, Next.js, Node.js, and MongoDB</strong> though I also love{" "}
-        <strong>Django and Django rest framework</strong>. I am always looking
-        to for new projects to build to enhance my skills. I am currently
-        looking for a <strong>full-time position</strong> as a software
-        developer.
+        My primary tech stack includes{" "}
+        <strong>React, Next.js, Node.js, and MongoDB/Firebase</strong> , but
+        I've increasingly gravitated towards Pythonic development, particularly
+        utilizing <strong>Django and the Django Rest Framework </strong> for
+        larger-scale and more
+        <em>industry-secure</em> projects.
       </p>
       <p>
-        <em>When I&apos;m not coding</em>, I enjoy playing chess, watching
-        movies, going for long walks in nature. I also enjoy learning about{" "}
-        <strong>history and philosophy</strong>. Sometimes I believe myself to
-        be musically challanged but with the right{" "}
-        <strong>minimal techno</strong> I can code for days 🎧
+        My <em>blissful retreat</em> involves spending evenings immersed in{" "}
+        <strong>coding</strong>
+        personal projects while listening to ambient music—my ultimate happy
+        place. 🎧
       </p>
     </motion.section>
   );

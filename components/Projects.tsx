@@ -6,7 +6,7 @@ import SectionHeading from "./ui/SectionHeading";
 import { projectCategoriesData, projectProgressData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
 import ProjectCategory from "./ProjectCategory";
-import ProjectProgress from "./ProjectProgress";
+import PipelineCard from "./PipelineCard";
 
 interface ProjectsProps {}
 
@@ -33,7 +33,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             className="group"
             key={index}
           >
-            <ProjectProgress {...project} />
+            <PipelineCard {...project} />
           </motion.div>
         ))}
       </div>

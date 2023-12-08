@@ -22,10 +22,10 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
     github,
   } = projectsData.find((project) => project.id === params.id)!;
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto min-h-screen max-w-6xl px-4 sm:px-6 lg:px-8">
       <div className="-mx-4 flex flex-col md:flex-row">
         <div className="px-4 md:flex-1">
-          <div className="mb-4 h-[460px] overflow-hidden rounded-lg bg-gray-300 dark:bg-gray-700">
+          <div className="mb-4 h-[460px] overflow-hidden rounded-lg bg-gray-300 ">
             <Image
               className="h-full w-full object-cover"
               src={imageUrl}
@@ -37,7 +37,7 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
             <div className="w-1/2 px-2">
               <a
                 href={github}
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-800"
                 target="_blank"
               >
                 <FaCode /> Code
@@ -46,7 +46,7 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
             <div className="w-1/2 px-2">
               <a
                 href={link}
-                className=" flex w-full items-center justify-center gap-2 rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+                className=" flex w-full items-center justify-center gap-2 rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300"
                 target="_blank"
               >
                 <CgWebsite /> Live Site
@@ -55,12 +55,10 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           </div>
         </div>
         <div className="px-4 md:flex-1">
-          <h2 className="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
-            {title}
-          </h2>
+          <h2 className="mb-2 text-2xl font-bold text-gray-800">{title}</h2>
           <TypeWriter
             text={excerpt}
-            className="mb-4 mt-2 text-base text-gray-600 dark:text-gray-300"
+            className="mb-4 mt-2 text-base text-gray-600"
             delay={10}
           />
 
@@ -78,9 +76,7 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           )}
           {collaborators.length != 0 && (
             <div className="mb-4">
-              <span className="font-bold text-gray-700 dark:text-gray-300">
-                Collaborators
-              </span>
+              <span className="font-bold text-gray-700">Collaborators</span>
               <ul className="items-center">
                 {collaborators &&
                   collaborators.map((collab, index) => (
@@ -101,10 +97,8 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           )}
 
           <div>
-            <span className="font-bold text-gray-700 dark:text-gray-300">
-              Description:
-            </span>
-            <p className="text-sm leading-6 text-gray-600 dark:text-gray-300">
+            <span className="font-bold text-gray-700 ">Description:</span>
+            <p className="loine text-base leading-7 text-gray-600 ">
               {description}
             </p>
           </div>

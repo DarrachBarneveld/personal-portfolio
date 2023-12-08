@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const Footer: FunctionComponent = () => {
   return (
-    <footer className="absolute bottom-0 w-screen bg-[#dbd7fb] bg-opacity-50	 px-4 py-5 text-center text-gray-500 backdrop-blur-xl">
+    <footer className="bottom-0 w-screen bg-[#dbd7fb] bg-opacity-50	 px-4 py-5 text-center text-gray-500 backdrop-blur-xl">
       <small className="mb-2 block text-sm">
         &copy; 2030 Darrach. All rights reserved.
       </small>

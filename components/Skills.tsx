@@ -45,7 +45,7 @@ const Skills: FunctionComponent = () => {
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
               {skillsData.map((skill, index) => (
                 <motion.li
-                  className="rounded-xl border border-black/20 bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                  className="rounded-xl border border-black/20 bg-white px-5 py-3"
                   key={index}
                   variants={staggeredFadeUp}
                   initial="initial"
