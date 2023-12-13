@@ -46,21 +46,17 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
             <div className="w-1/2 px-2">
               <a
                 href={link}
-                className=" flex w-full items-center justify-center gap-2 rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-200 px-4 py-2 font-bold text-gray-800 hover:bg-gray-300"
                 target="_blank"
               >
-                <CgWebsite /> Live Site
+                <CgWebsite /> <span>Live Demo</span>
               </a>
             </div>
           </div>
         </div>
         <div className="px-4 md:flex-1">
           <h2 className="mb-2 text-2xl font-bold text-gray-800">{title}</h2>
-          <TypeWriter
-            text={excerpt}
-            className="mb-4 mt-2 text-base text-gray-600"
-            delay={10}
-          />
+          <p className="mb-4 mt-2 text-base text-gray-600">{excerpt}</p>
 
           <div className="mb-4">
             <Tags tags={tags} />
@@ -98,9 +94,12 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
 
           <div>
             <span className="font-bold text-gray-700 ">Description:</span>
-            <p className="loine text-base leading-7 text-gray-600 ">
-              {description}
-            </p>
+
+            <TypeWriter
+              text={excerpt}
+              className="text-base leading-7 text-gray-600 "
+              delay={10}
+            />
           </div>
         </div>
       </div>

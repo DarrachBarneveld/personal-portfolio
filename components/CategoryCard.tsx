@@ -36,7 +36,7 @@ const CategoryCard: FunctionComponent<CategoryCardProps> = ({
           <div className="mt-8">
             <button
               onClick={() => setter(true)}
-              className="rounded bg-gray-900 px-5 py-3 font-semibold text-gray-100"
+              className="rounded bg-gray-900 px-5 py-3 font-semibold text-gray-100 hover:bg-green-600 focus:bg-green-600"
             >
               View Projects
             </button>

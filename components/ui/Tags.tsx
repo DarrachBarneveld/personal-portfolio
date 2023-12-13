@@ -40,9 +40,8 @@ interface TagsProps {
 
 const Tags: FunctionComponent<TagsProps> = ({ tags }) => {
   return (
-    <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
+    <ul className="mt-4 flex flex-wrap gap-2 md:mt-auto">
       {tags.map((tag, index) => {
-        // Ensure tag is a valid key
         const backgroundVariant =
           backgroundTagVariants[tag as keyof typeof backgroundTagVariants];
 

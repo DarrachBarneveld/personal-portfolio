@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FunctionComponent, useState } from "react";
 import ScrollViewWrapper from "./ui/ScrollViewWrapper";
-import { projectCategoriesData, projectsDataExcerpt } from "@/lib/data";
+import { projectCategoriesData, projectsData } from "@/lib/data";
 import { AnimatePresence, motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { IoIosCloseCircle } from "react-icons/io";
@@ -51,7 +51,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
 }) => {
   const [showProjects, setShowProjects] = useState(false);
 
-  const filteredProjects = projectsDataExcerpt.filter((project) =>
+  const filteredProjects = projectsData.filter((project) =>
     projects.some((id: string) => id === project.id),
   );
 
@@ -83,7 +83,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
               <div className="mt-8">
                 <button
                   onClick={() => setShowProjects(true)}
-                  className="rounded bg-gray-900 px-5 py-3 font-semibold text-gray-100"
+                  className="rounded bg-gray-900 px-5 py-3 font-semibold text-gray-100 hover:bg-green-600 focus:bg-green-600"
                 >
                   View Projects
                 </button>
@@ -110,7 +110,7 @@ const ProjectCategory: FunctionComponent<ProjectCategoryProps> = ({
             {title}
           </h2>
 
-          <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="bg-red flex flex-wrap items-center justify-center gap-2">
             {filteredProjects.map((project, index) => (
               <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
