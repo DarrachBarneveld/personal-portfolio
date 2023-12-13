@@ -19,30 +19,24 @@ const About: FunctionComponent = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating from <strong>UCD</strong> with <strong>Science</strong>{" "}
-        degree and <em>7 years </em>immersed in the realms of{" "}
-        <strong>digital marketing</strong> and <strong>sales</strong>, I took a
-        decisive step to transition fully into the <strong>tech</strong>{" "}
-        industry. The foundational knowledge of <strong>HTML</strong>,{" "}
-        <strong>CSS</strong>, and <strong>JavaScript </strong>
-        acquired in digital marketing served as a catalyst, propelling me into a
-        more <em>profound</em> exploration of{" "}
-        <strong>full-stack development.</strong>
+        <strong>UCD Science</strong> graduate
+        <br />
+        Seasoned <strong>Digital marketing</strong> and <strong>sales </strong>
+        professional with over 7 years of experience. <br />
+        Specialised in landing page UI/UX design, A/B testing and statistical
+        analysis.
+        <br />
+        <strong>JavaScript</strong> efficiendo
       </p>
       <p className="mb-3">
         My primary tech stack includes{" "}
         <strong>React, Next.js, Node.js, and MongoDB/Firebase</strong> , but
-        I&apos;ve increasingly gravitated towards Pythonic development,
-        particularly utilizing{" "}
+        gravitating towards Pythonic development utilizing{" "}
         <strong>Django and the Django Rest Framework </strong> for larger-scale
-        and more
-        <em>industry-secure</em> projects.
+        and more <em>industry-secure</em> projects.
       </p>
       <p>
-        My <em>blissful retreat</em> involves spending evenings immersed in{" "}
-        <strong>coding</strong>
-        personal projects while listening to ambient music—my ultimate happy
-        place. 🎧
+        <em>Blissful</em> <strong>coding </strong> to ambient music🎧
       </p>
     </motion.section>
   );

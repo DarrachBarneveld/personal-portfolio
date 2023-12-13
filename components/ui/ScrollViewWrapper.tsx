@@ -14,7 +14,7 @@ const ScrollViewWrapper: FunctionComponent<ScrollViewWrapperProps> = ({
     offset: ["0 1", "1.33 1"],
   });
 
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
   return (
     <motion.div
