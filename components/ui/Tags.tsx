@@ -1,5 +1,7 @@
 "use client";
 
+import { useSearchContext } from "@/context/SearchContext";
+import clsx from "clsx";
 import { FunctionComponent } from "react";
 
 export const colorTagVariants = {
@@ -38,9 +40,11 @@ export const colorTagVariants = {
 
 interface TagsProps {
   tags: string[];
+  xl?: boolean;
 }
 
-const Tags: FunctionComponent<TagsProps> = ({ tags }) => {
+const Tags: FunctionComponent<TagsProps> = ({ tags, xl }) => {
+  const { setFilterTags } = useSearchContext();
   return (
     <ul className="mt-4 flex flex-wrap gap-1 md:mt-auto">
       {tags.map((tag, index) => {
@@ -48,11 +52,28 @@ const Tags: FunctionComponent<TagsProps> = ({ tags }) => {
           colorTagVariants[tag as keyof typeof colorTagVariants];
 
         return (
-          <li
-            className={`${colorVariants[0]} rounded-full px-2 py-1 text-[0.6rem] uppercase tracking-wider lg:text-[0.7rem] ${colorVariants[1]}`}
-            key={index}
-          >
-            {tag}
+          <li key={index}>
+            <button
+              onClick={(e: React.MouseEvent) => {
+                e.preventDefault();
+                setFilterTags((prev) => {
+                  return prev.includes(tag)
+                    ? prev.filter((t) => t !== tag)
+                    : [...prev, tag];
+                });
+              }}
+              className={clsx(
+                `${colorVariants[0]} rounded-full px-2 py-1 ${
+                  xl
+                    ? "text-[0.8rem] lg:text-[.8rem] "
+                    : "text-[0.7rem] lg:text-[0.7rem]"
+                } uppercase tracking-wider lg:text-[0.7rem] ${
+                  colorVariants[1]
+                } transition-colors duration-200 hover:bg-gray-800 hover:text-white hover:ring-indigo-500 focus:bg-gray-900 focus:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 focus:ring-offset-gray-100`,
+              )}
+            >
+              {tag} {xl && "x"}
+            </button>
           </li>
         );
       })}

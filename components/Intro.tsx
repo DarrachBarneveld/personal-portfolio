@@ -87,7 +87,7 @@ const Intro: FunctionComponent = () => {
           href="mailto:darrachb1991@gmail.com"
           className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
         >
-          Contact me here{" "}
+          Contact me here
           <CgArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </a>
 

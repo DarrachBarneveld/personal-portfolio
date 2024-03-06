@@ -9,6 +9,7 @@ import gameDev from "@/public/images/gamedev.webp";
 import neonDefence from "@/public/images/neondefence.png";
 import retroMashup from "@/public/images/retromashup.png";
 import lotrPokemon from "@/public/images/lotr-pokemon.png";
+import ciswag from "@/public/images/ciswag.png";
 import lepreTrack from "@/public/images/lepretrack.png";
 import sparkleAi from "@/public/images/sparkleai.png";
 import festiveTimer from "@/public/images/festivetimer.png";
@@ -88,9 +89,10 @@ export const projectsData = [
   {
     id: "1",
     title: "Neon Defence",
+    rating: 7,
     excerpt:
       "A Tower defence game and winner of the Dev Games Hackathon, June 2023.",
-    tags: ["javascript", "phaserjs", "firebase", "tiled"],
+    tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
     imageUrl: neonDefence,
     link: "https://neon-defence.netlify.app/",
     github: "https://github.com/Barneslow/neon-defence",
@@ -103,10 +105,11 @@ export const projectsData = [
   },
   {
     id: "2",
+    rating: 7.5,
     title: "Retro Mashup Mayhem",
     excerpt:
       "Nostalic side scrolling shooter and winner of Code Institute's Retro Quest Hackathon, September 2023.",
-    tags: ["javascript", "kaboomjs"],
+    tags: ["javascript", "kaboomjs", "css"],
     imageUrl: retroMashup,
     link: "https://retro-mashup-mayhem.netlify.app/",
     github: "https://github.com/DarrachBarneveld/Retro-Mashup-Mayhem",
@@ -142,9 +145,17 @@ export const projectsData = [
   {
     id: "4",
     title: "Lord of the Rings Pokemon",
+    rating: 4,
     excerpt:
       "A live multiplayer card game, where players strategically duel in the iconic Middle-earth setting.",
-    tags: ["react", "socket.io", "node.js", "express", "typescript"],
+    tags: [
+      "react",
+      "socket.io",
+      "node.js",
+      "express",
+      "typescript",
+      "tailwind",
+    ],
     imageUrl: lotrPokemon,
     link: "https://lotr-pokemon.netlify.app",
     github: "https://github.com/DarrachBarneveld/lotr-pokemon-multi",
@@ -156,9 +167,10 @@ export const projectsData = [
   {
     id: "5",
     title: "Cool Coders",
+    rating: 7,
     excerpt:
       "A hub for tech enthusiasts to share insights and knowledge through writing and engaging with articles.",
-    tags: ["python", "django", "bootstrap"],
+    tags: ["python", "django", "bootstrap", "sql"],
     imageUrl: coolcoders,
     link: "https://coolcoders-b69260c4617a.herokuapp.com/",
     github: "https://github.com/DarrachBarneveld/CoolCoders-PP4",
@@ -169,6 +181,7 @@ export const projectsData = [
   {
     id: "6",
     title: "LepreTrack V2",
+    rating: 8,
     excerpt:
       "Tracking application to monitor and enhance users 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
     tags: ["react", "typescript", "bootstrap", "firebase"],
@@ -182,6 +195,7 @@ export const projectsData = [
   {
     id: "7",
     title: "B-Meditation",
+    rating: 8,
     excerpt:
       "A mobile application for mindfulness and meditation, featuring a vast collection of quotes and content from historical figures.",
     tags: ["react native", "javascript", "expo"],
@@ -195,9 +209,10 @@ export const projectsData = [
   {
     id: "8",
     title: "Tourist Traveller",
+    rating: 6,
     excerpt:
       "A travel application for top global destinations, assisting users in planning their next trip by recommending top attractions along with basic desitination insights.",
-    tags: ["react", "typescript", "google api"],
+    tags: ["react", "typescript", "google api", "tailwind"],
     imageUrl: touristTraveller,
     link: "https://tourist-traveller.vercel.app/",
     github: "https://github.com/DarrachBarneveld/tourist-traveller",
@@ -208,6 +223,7 @@ export const projectsData = [
   {
     id: "9",
     title: "Lovin Summer",
+    rating: 5,
     excerpt:
       "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
     tags: ["bootstrap", "html", "css", "javascript"],
@@ -233,6 +249,7 @@ export const projectsData = [
     link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
     github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
     collaborators: [],
+    rating: 6,
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
   },
@@ -246,16 +263,32 @@ export const projectsData = [
     link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
     github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
     collaborators: [],
+    rating: 9,
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
   },
   {
     id: "12",
     title: "Festive Timer",
+    rating: 7,
     excerpt:
       "Global New Years countdown app. Users can geolcate any country on the map to learn about their New Years traditions and countdown to the New Year. Winner of CI's New Years Hackathon 2023.",
     tags: ["react", "next.js", "google api", "bootstrap", "typescript"],
     imageUrl: festiveTimer,
+    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
+    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    collaborators: [],
+    description:
+      "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
+  },
+  {
+    id: "12",
+    title: "Ci Swag",
+    rating: 10,
+    excerpt:
+      "Full-stack e-commerce platform for Code Institute merchandise, supplementary e-learning courses, and memberships. Final project achieved with distinction in Level 6 diploma.",
+    tags: ["python", "django", "stripe", "aws", "bootstrap", "sql"],
+    imageUrl: ciswag,
     link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
     github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
     collaborators: [],
