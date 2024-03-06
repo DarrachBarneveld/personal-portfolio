@@ -10,6 +10,8 @@ import neonDefence from "@/public/images/neondefence.png";
 import retroMashup from "@/public/images/retromashup.png";
 import lotrPokemon from "@/public/images/lotr-pokemon.png";
 import lepreTrack from "@/public/images/lepretrack.png";
+import sparkleAi from "@/public/images/sparkleai.png";
+import festiveTimer from "@/public/images/festivetimer.png";
 import lepreTrackV2 from "@/public/images/lepretrackv2.png";
 import coolcoders from "@/public/images/coolcoders.png";
 import bmeditation from "@/public/images/bmeditaiton.png";
@@ -87,8 +89,8 @@ export const projectsData = [
     id: "1",
     title: "Neon Defence",
     excerpt:
-      "Neon Defence, a hackathon gem, merges tower defense with a Tron-like aesthetic.",
-    tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
+      "A Tower defence game and winner of the Dev Games Hackathon, June 2023.",
+    tags: ["javascript", "phaserjs", "firebase", "tiled"],
     imageUrl: neonDefence,
     link: "https://neon-defence.netlify.app/",
     github: "https://github.com/Barneslow/neon-defence",
@@ -103,8 +105,8 @@ export const projectsData = [
     id: "2",
     title: "Retro Mashup Mayhem",
     excerpt:
-      "Retro Mashup Mayhem, born from a nostalgic retro hackathon, pays homage to the golden era of 80s/90s video games.",
-    tags: ["javascript", "kaboomjs", "tiled"],
+      "Nostalic side scrolling shooter and winner of Code Institute's Retro Quest Hackathon, September 2023.",
+    tags: ["javascript", "kaboomjs"],
     imageUrl: retroMashup,
     link: "https://retro-mashup-mayhem.netlify.app/",
     github: "https://github.com/DarrachBarneveld/Retro-Mashup-Mayhem",
@@ -118,30 +120,30 @@ export const projectsData = [
     description:
       "This project was developed using KaboomJS during Code Institute's September Retro Quest Hackathon. My randomly assigned team was tasked with building a game using a JS library of their choice within a 5-day timeframe. I took on the responsibility of overseeing the logic and architecture of the game, and additionally, I was nominated as the scrum master for the hackathon. The creative input and dedication of the team played a pivotal role in securing our victory.",
   },
-  {
-    id: "3",
-    title: "LepreTrack",
-    excerpt:
-      "LepreTrack is a platform empowering users to monitor and enhance their 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
-    tags: ["javascript", "html", "css", "firebase", "bootstrap"],
-    imageUrl: lepreTrack,
-    link: "https://lepretrack.netlify.app/",
-    github: "https://github.com/DarrachBarneveld/Lepre-Track",
-    collaborators: [
-      { name: "Shane", github: "https://github.com/Shane-Donlon" },
-      { name: "Adam", github: "https://github.com/adammkeane" },
-      { name: "Mark", github: "https://github.com/Markpm-code" },
-      { name: "Amanda", github: "https://github.com/apita1423" },
-      { name: "Aurelien", github: "https://github.com/AMJL-16" },
-    ],
-    description:
-      "This project was undertaken for the Code Institute/Soda Socials in-person hackathon titled Tech for a Greener Tomorrow: Hackathon for Sustainable Solutions. The challenge was to conceptualize an application that would empower individuals to contribute to a more sustainable future. Inspired by Fitbit, we opted for a green activity tracking app. User data was correlated with an Irish average to determine their green level, and badges were assigned based on their overall score. Firebase served as the primary database. Additionally, users had access to valuable information on improving their score through an integrated OpenAI chatbot. I held the role of scrum master for this project.",
-  },
+  // {
+  //   id: "3",
+  //   title: "LepreTrack",
+  //   excerpt:
+  //     "LepreTrack is a platform empowering users to monitor and enhance their 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
+  //   tags: ["javascript", "html", "css", "firebase", "bootstrap"],
+  //   imageUrl: lepreTrack,
+  //   link: "https://lepretrack.netlify.app/",
+  //   github: "https://github.com/DarrachBarneveld/Lepre-Track",
+  //   collaborators: [
+  //     { name: "Shane", github: "https://github.com/Shane-Donlon" },
+  //     { name: "Adam", github: "https://github.com/adammkeane" },
+  //     { name: "Mark", github: "https://github.com/Markpm-code" },
+  //     { name: "Amanda", github: "https://github.com/apita1423" },
+  //     { name: "Aurelien", github: "https://github.com/AMJL-16" },
+  //   ],
+  //   description:
+  //     "This project was undertaken for the Code Institute/Soda Socials in-person hackathon titled Tech for a Greener Tomorrow: Hackathon for Sustainable Solutions. The challenge was to conceptualize an application that would empower individuals to contribute to a more sustainable future. Inspired by Fitbit, we opted for a green activity tracking app. User data was correlated with an Irish average to determine their green level, and badges were assigned based on their overall score. Firebase served as the primary database. Additionally, users had access to valuable information on improving their score through an integrated OpenAI chatbot. I held the role of scrum master for this project.",
+  // },
   {
     id: "4",
     title: "Lord of the Rings Pokemon",
     excerpt:
-      "A multiplayer card game merging Lord of the Rings and Pokémon, where players strategically duel in the iconic Middle-earth setting.",
+      "A live multiplayer card game, where players strategically duel in the iconic Middle-earth setting.",
     tags: ["react", "socket.io", "node.js", "express", "typescript"],
     imageUrl: lotrPokemon,
     link: "https://lotr-pokemon.netlify.app",
@@ -155,7 +157,7 @@ export const projectsData = [
     id: "5",
     title: "Cool Coders",
     excerpt:
-      "Cool Coders: A hub for tech enthusiasts to share insights and knowledge through engaging articles, fostering a collaborative learning community.",
+      "A hub for tech enthusiasts to share insights and knowledge through writing and engaging with articles.",
     tags: ["python", "django", "bootstrap"],
     imageUrl: coolcoders,
     link: "https://coolcoders-b69260c4617a.herokuapp.com/",
@@ -168,7 +170,7 @@ export const projectsData = [
     id: "6",
     title: "LepreTrack V2",
     excerpt:
-      "LepreTrack v2 builds upon its predecessor, LepreTrack v1, but incorporates the latest front-end technologies for an enhanced and seamless user experience.",
+      "Tracking application to monitor and enhance users 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
     tags: ["react", "typescript", "bootstrap", "firebase"],
     imageUrl: lepreTrackV2,
     link: "https://lepretrackv2.netlify.app/",
@@ -181,7 +183,7 @@ export const projectsData = [
     id: "7",
     title: "B-Meditation",
     excerpt:
-      "Embrace mindfulness with BMeditation, featuring quotes from history's great teachers. Journal and meditate on these wisdom nuggets for a transformative experience.",
+      "A mobile application for mindfulness and meditation, featuring a vast collection of quotes and content from historical figures.",
     tags: ["react native", "javascript", "expo"],
     imageUrl: bmeditation,
     link: "https://bmeditation-api-website.vercel.app/",
@@ -194,8 +196,8 @@ export const projectsData = [
     id: "8",
     title: "Tourist Traveller",
     excerpt:
-      "A tourist traveler app that seamlessly connects users with curated recommendations for top global destinations, providing a personalized and convenient guide for unforgettable experiences.",
-    tags: ["react", "typescript"],
+      "A travel application for top global destinations, assisting users in planning their next trip by recommending top attractions along with basic desitination insights.",
+    tags: ["react", "typescript", "google api"],
     imageUrl: touristTraveller,
     link: "https://tourist-traveller.vercel.app/",
     github: "https://github.com/DarrachBarneveld/tourist-traveller",
@@ -225,9 +227,35 @@ export const projectsData = [
     id: "10",
     title: "Trivia Trumps",
     excerpt:
-      "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
+      "A quiz game leveraging the Open Trivia API, featuring multiple categories with varying difficulty levels. Utilised by local pubs throughout Dublin.",
     tags: ["html", "css", "javascript"],
     imageUrl: triviaTrumps,
+    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
+    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    collaborators: [],
+    description:
+      "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
+  },
+  {
+    id: "11",
+    title: "Sparkle Ai",
+    excerpt:
+      "An Ai Planning assistant. Generates date recommendations based on user modelling/inputs and lists nearby locations to carry out the recommendation.",
+    tags: ["react", "django rest", "javascript", "openai", "google api"],
+    imageUrl: sparkleAi,
+    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
+    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    collaborators: [],
+    description:
+      "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
+  },
+  {
+    id: "12",
+    title: "Festive Timer",
+    excerpt:
+      "Global New Years countdown app. Users can geolcate any country on the map to learn about their New Years traditions and countdown to the New Year. Winner of CI's New Years Hackathon 2023.",
+    tags: ["react", "next.js", "google api", "bootstrap", "typescript"],
+    imageUrl: festiveTimer,
     link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
     github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
     collaborators: [],

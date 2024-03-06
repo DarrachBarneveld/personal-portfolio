@@ -32,6 +32,8 @@ export const colorTagVariants = {
   stripe: ["bg-[#6058f7]", "text-white"],
   ["spotify api"]: ["bg-[#22cf5d]", "text-white"],
   ["django rest"]: ["bg-[#a30000]", "text-white"],
+  ["google api"]: ["bg-[#2b9b4b]", "text-white"],
+  openai: ["bg-[#109e7b]", "text-white"],
 };
 
 interface TagsProps {
