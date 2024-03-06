@@ -22,7 +22,7 @@ const ArticleCard: FunctionComponent<ArticleCardProps> = ({
       aria-label="Link to article"
       className="group outline-none"
     >
-      <article className="flex w-full max-w-md flex-col overflow-hidden rounded-lg border-2 shadow-lg hover:cursor-pointer hover:border-indigo-500 hover:bg-gray-200 group-focus-within:ring-indigo-500 group-focus:bg-gray-200 group-focus:outline-none group-focus:ring-2 group-focus:ring-indigo-500">
+      <article className="flex w-full max-w-md flex-col overflow-hidden rounded-lg border-2 bg-white shadow-lg hover:cursor-pointer hover:border-indigo-500 hover:bg-gray-200 group-focus-within:ring-indigo-500 group-focus:bg-gray-200 group-focus:outline-none group-focus:ring-2 group-focus:ring-indigo-500">
         <img
           src={imageUrl}
           alt="Article Image"

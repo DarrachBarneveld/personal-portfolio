@@ -258,7 +258,14 @@ export const projectsData = [
     title: "Sparkle Ai",
     excerpt:
       "An Ai Planning assistant. Generates date recommendations based on user modelling/inputs and lists nearby locations to carry out the recommendation.",
-    tags: ["react", "django rest", "javascript", "openai", "google api"],
+    tags: [
+      "react",
+      "python",
+      "django rest",
+      "javascript",
+      "openai",
+      "google api",
+    ],
     imageUrl: sparkleAi,
     link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
     github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",

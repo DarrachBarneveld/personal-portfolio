@@ -26,7 +26,7 @@ export default function TagDropdown() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="no-scrollbar absolute -left-5 top-7 z-50 mt-2 h-60 w-fit  overflow-scroll rounded-md border-2 border-indigo-500 bg-indigo-50 p-1 shadow-lg ring-1 ring-black/5 focus:outline-none">
+          <Menu.Items className="no-scrollbar absolute -left-5 top-7 z-50 mt-2 h-60 w-fit  overflow-scroll rounded-md border-2 border-indigo-500 bg-white p-1 px-2 shadow-xl shadow-indigo-950 ring-1 ring-black/5 focus:outline-none">
             <div className="px-1 py-1">
               {Object.keys(colorTagVariants).map(
                 (key: string, index: number) => (

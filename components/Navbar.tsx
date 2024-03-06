@@ -42,7 +42,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
               {link.name}
               {link.name === activeSection && (
                 <motion.span
-                  className="absolute inset-0 -z-10 rounded-full bg-violet-100"
+                  className="absolute inset-0 -z-10 rounded-full bg-indigo-200"
                   layoutId="activeSection"
                   transition={{
                     type: "spring",
