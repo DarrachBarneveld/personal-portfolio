@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
-import Tags from "./ui/Tags";
+import { motion } from "framer-motion";
 import { projectProgressData } from "@/lib/data";
+import Tags from "./ui/Tags";
 
 type PipelineCardProps = (typeof projectProgressData)[number];
 
@@ -50,4 +51,27 @@ const PipelineCard: FunctionComponent<PipelineCardProps> = ({
   );
 };
 
-export default PipelineCard;
+const PipeLine: FunctionComponent = () => {
+  return (
+    <div>
+      <h2 className="mb-3 mt-8 text-center text-3xl font-medium capitalize">
+        Pipeline
+      </h2>
+      <div className="flex flex-wrap justify-center gap-2">
+        {projectProgressData.map((project, index) => (
+          <motion.div
+            initial={{ scale: 0.7, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.3 * index }}
+            className="group"
+            key={index}
+          >
+            <PipelineCard {...project} />
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PipeLine;

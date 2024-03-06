@@ -7,8 +7,6 @@ type CustomTimeLineComponentProps = {
   item: Experience;
 };
 
-function componentStyling(item: string) {}
-
 const CustomTimeLineComponent: FunctionComponent<
   CustomTimeLineComponentProps
 > = ({ item }) => {

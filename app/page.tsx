@@ -1,4 +1,3 @@
-import About from "@/components/About";
 import Collab from "@/components/Collab";
 import Experience from "@/components/Experience";
 import Intro from "@/components/Intro";
@@ -11,11 +10,10 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
-      <About />
       <Projects />
-      <Skills />
-      <Experience />
-      <Collab />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
+      {/* <Collab /> */}
     </main>
   );
 }
