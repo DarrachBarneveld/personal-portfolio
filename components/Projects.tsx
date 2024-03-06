@@ -1,7 +1,7 @@
 "use client";
 
 import { FunctionComponent, useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import SectionHeading from "./ui/SectionHeading";
 import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
@@ -11,6 +11,7 @@ import SearchBar from "./ui/SearchBar";
 import { useSearchContext } from "@/context/SearchContext";
 import { BiLoader } from "react-icons/bi";
 import FilterBar from "./ui/FilterBar";
+import { cardFadeEnterExit } from "@/animations/containers";
 
 interface ProjectsProps {}
 
@@ -22,6 +23,12 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
   useEffect(() => {
     setDisplayCount(6);
   }, [search, filterTags]);
+
+  const shouldReduceMotion = useReducedMotion();
+
+  const animation = shouldReduceMotion
+    ? { initial: { scale: 1, opacity: 1 } }
+    : cardFadeEnterExit;
 
   const filteredProjects = projectsData
     .filter((project) => {
@@ -56,19 +63,9 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           {slicedProjects.map((project, index) => {
             return (
               <motion.div
-                initial={{ scale: 0.85, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  delay: 0.1 * index,
-                  duration: 0.2,
-                  ease: "easeInOut",
-                }}
+                {...animation}
+                transition={{ delay: 0.1 * index }}
                 key={project.id + index + project.link}
-                exit={{
-                  scale: 0.85,
-                  opacity: 0,
-                  transition: { duration: 0.15 },
-                }}
               >
                 <ProjectCard {...project} />
               </motion.div>
