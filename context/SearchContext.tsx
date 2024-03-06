@@ -10,14 +10,14 @@ type SearchContextType = {
   search: string;
   setSearch: React.Dispatch<React.SetStateAction<string>>;
   filterTags: string[];
-  setFilterTags: React.Dispatch<React.SetStateAction<string[]>>;
+  handleFilterTags: (tag: string) => void;
 };
 
 const defaultState: SearchContextType = {
   search: "",
   setSearch: () => {},
   filterTags: [],
-  setFilterTags: () => {},
+  handleFilterTags: () => {},
 };
 
 export const SearchContext = createContext(defaultState as SearchContextType);
@@ -26,13 +26,21 @@ export function SearchProvider({ children }: SearchContextProviderProps) {
   const [search, setSearch] = useState<string>("");
   const [filterTags, setFilterTags] = useState<string[]>([]);
 
+  function handleFilterTags(tag: string) {
+    setFilterTags((prev) => {
+      return prev.includes(tag)
+        ? prev.filter((t) => t !== tag)
+        : [...prev, tag];
+    });
+  }
+
   return (
     <SearchContext.Provider
       value={{
         search,
         setSearch,
         filterTags,
-        setFilterTags,
+        handleFilterTags,
       }}
     >
       {children}

@@ -1,7 +1,10 @@
 import { useSearchContext } from "@/context/SearchContext";
 import { FunctionComponent, FormEvent, ChangeEvent, useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { IoFilter } from "react-icons/io5";
+
 import Tags from "./Tags";
+import TagDropdown from "./TagDropdown";
 
 interface SearchBarProps {}
 
@@ -36,8 +39,11 @@ const SearchBar: FunctionComponent<SearchBarProps> = () => {
           </button>
         </div>
       </form>
-      <div className="container flex items-center justify-center">
-        <Tags tags={filterTags} xl />
+      <div className="mx-auto flex max-w-[450px] items-center gap-2 rounded-full border-black/30 bg-white px-4 shadow">
+        <TagDropdown />
+        <div className="no-scrollbar w-full items-center overflow-scroll p-1">
+          <Tags tags={filterTags} xl className="flex-nowrap" />
+        </div>
       </div>
     </div>
   );

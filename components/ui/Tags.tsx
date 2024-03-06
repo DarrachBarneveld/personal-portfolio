@@ -1,10 +1,15 @@
 "use client";
 
 import { useSearchContext } from "@/context/SearchContext";
+import { cn } from "@/lib/utils";
 import clsx from "clsx";
 import { FunctionComponent } from "react";
 
-export const colorTagVariants = {
+interface ColorTagVariants {
+  [key: string]: string[];
+}
+
+export const colorTagVariants: ColorTagVariants = {
   react: ["bg-[#45cff2]", "text-black"],
   typescript: ["bg-[#3c76c6]", "text-white"],
   github: ["bg-[#000000]", "text-white"],
@@ -41,12 +46,13 @@ export const colorTagVariants = {
 interface TagsProps {
   tags: string[];
   xl?: boolean;
+  className?: string;
 }
 
-const Tags: FunctionComponent<TagsProps> = ({ tags, xl }) => {
-  const { setFilterTags } = useSearchContext();
+const Tags: FunctionComponent<TagsProps> = ({ tags, xl, className }) => {
+  const { handleFilterTags } = useSearchContext();
   return (
-    <ul className="mt-4 flex flex-wrap gap-1 md:mt-auto">
+    <ul className={cn("fmt-4 flex flex-wrap gap-1 md:mt-auto", className)}>
       {tags.map((tag, index) => {
         const colorVariants =
           colorTagVariants[tag as keyof typeof colorTagVariants];
@@ -56,11 +62,7 @@ const Tags: FunctionComponent<TagsProps> = ({ tags, xl }) => {
             <button
               onClick={(e: React.MouseEvent) => {
                 e.preventDefault();
-                setFilterTags((prev) => {
-                  return prev.includes(tag)
-                    ? prev.filter((t) => t !== tag)
-                    : [...prev, tag];
-                });
+                handleFilterTags(tag);
               }}
               className={clsx(
                 `${colorVariants[0]} rounded-full px-2 py-1 ${
@@ -69,7 +71,7 @@ const Tags: FunctionComponent<TagsProps> = ({ tags, xl }) => {
                     : "text-[0.6rem] lg:text-[0.7rem]"
                 } uppercase tracking-wider lg:text-[0.7rem] ${
                   colorVariants[1]
-                } transition-colors duration-200 hover:bg-gray-800 hover:text-white hover:ring-indigo-500 focus:bg-gray-900 focus:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 focus:ring-offset-gray-100`,
+                } whitespace-nowrap transition-colors duration-200 hover:bg-gray-800 hover:text-white hover:ring-indigo-500 focus:bg-gray-900 focus:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 focus:ring-offset-gray-100`,
               )}
             >
               {tag} {xl && "x"}
