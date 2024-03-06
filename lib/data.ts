@@ -48,6 +48,10 @@ export const links = [
     name: "Collab",
     hash: "#collab",
   },
+  {
+    name: "About",
+    hash: "#about",
+  },
 ] as const;
 
 export const experiencesData = [
