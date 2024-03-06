@@ -8,7 +8,7 @@ const SectionHeading: FunctionComponent<SectionHeadingProps> = ({
   children,
 }) => {
   return (
-    <h2 className="mb-8 text-center text-3xl font-medium capitalize">
+    <h2 className="mb-8 text-center text-2xl font-black capitalize text-indigo-950 lg:text-4xl">
       {children}
     </h2>
   );

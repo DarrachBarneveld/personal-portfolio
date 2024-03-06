@@ -17,8 +17,8 @@ const ProjectCard: FunctionComponent<ProjectProps> = ({
   id,
 }) => {
   return (
-    <Link href={`/project/${id}`}>
-      <article className="relative h-full max-w-[35rem] flex-1 overflow-hidden rounded-lg border-2 border-black/20 bg-white transition hover:cursor-pointer hover:border-indigo-500 hover:bg-gray-200 group-focus:bg-gray-200 group-focus:outline-none group-focus:ring-2 group-focus:ring-indigo-500 ">
+    <Link href={`/project/${id}`} className="group outline-none">
+      <article className="relative h-full max-w-[35rem] flex-1 overflow-hidden rounded-lg border-2 border-black/20 bg-white transition hover:cursor-pointer hover:border-indigo-500 hover:bg-gray-200 group-focus-within:ring-indigo-500 group-focus:bg-gray-200 group-focus:outline-none group-focus:ring-2 group-focus:ring-indigo-500">
         <Image
           src={imageUrl}
           alt="Project I worked on"
@@ -63,13 +63,3 @@ const ProjectCard: FunctionComponent<ProjectProps> = ({
 };
 
 export default ProjectCard;
-
-{
-  /* <Link
-className="rounded bg-gray-900 px-5 py- font-semibold text-gray-100"
-target="_blank"
-href={`/project/${id}`}
->
-Read More
-</Link> */
-}

@@ -1,3 +1,4 @@
+import Articles from "@/components/Articles";
 import Collab from "@/components/Collab";
 import Experience from "@/components/Experience";
 import Intro from "@/components/Intro";
@@ -11,6 +12,7 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <Projects />
+      <Articles />
       {/* <Skills /> */}
       {/* <Experience /> */}
       {/* <Collab /> */}

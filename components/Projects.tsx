@@ -62,7 +62,6 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   ease: "easeInOut",
                 }}
                 key={project.id + index + project.link}
-                className="group"
                 exit={{
                   scale: 0.85,
                   opacity: 0,

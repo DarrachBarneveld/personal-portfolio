@@ -28,12 +28,12 @@ export const links = [
     hash: "/#home",
   },
   {
-    name: "About",
-    hash: "/#about",
-  },
-  {
     name: "Projects",
     hash: "/#projects",
+  },
+  {
+    name: "Articles",
+    hash: "/#articles",
   },
   {
     name: "Skills",
@@ -296,6 +296,82 @@ export const projectsData = [
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
   },
 ];
+
+export const articleData = [
+  {
+    id: "1",
+    title:
+      "Integrating Google's appointment scheduler into your NextJS application",
+    excerpt:
+      "A step-by-step guide on how to integrate Google's appointment scheduler into a next JS application. This article is perfect for freelancers and small business owners who want to integrate a booking system into their website.",
+    published: "09/01/2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1522241112606-b5d35a468795?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/integrating-google-s-appointment-scheduler-into-your-nextjs-application-yb-p6qfu",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+  {
+    id: "2",
+    title: "Get Stripe card payments working in your React Application",
+    excerpt:
+      "A step by step guide on how to set up stripe payments within a react application. This article is perfect for freelancers and small business owners who want to integrate a payment system into their website.",
+    published: "18/01/2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/get-stripe-card-payments-working-in-your-react-application-y3jji7jw",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+  {
+    id: "3",
+    title: "Easily create User Profiles with Django AllAuth",
+    excerpt:
+      "How to create user profiles with Django AllAuth. This article is for helping new django developers create malleable user profiles that do not impact the all auths authentication model. ",
+    published: "27/01/2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/easily-create-user-profiles-with-django-allauth-nsbnigtx",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+  {
+    id: "4",
+    title: "Simplify Serving Static Files In Django with Whitenoise",
+    excerpt:
+      "This article outlines a quick and easy method for serving static files on a Django application using Whitenoise. This is perfect for developers who are new to Django and want to serve their static files with ease.",
+    published: "05/02/2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1596367407372-96cb88503db6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/simplify-serving-static-files-in-django-with-whitenoise-tevvwsky",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+  {
+    id: "5",
+    title: "Setting Up Stripe Webhooks for Development Environment Testing",
+    excerpt:
+      "A step by step guide outlining the process for testing stripe webhooks in a development environment. This article shows the benefits of having local testing over deploying to a live server.",
+    published: "14/02/2024",
+    imageUrl:
+      "https://plus.unsplash.com/premium_photo-1682104376313-ad77c73ba131?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/setting-up-stripe-webhooks-for-development-environment-testing-6-ygdgf",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+  {
+    id: "6",
+    title: "Win the battle against CSS",
+    excerpt:
+      "Tips and tricks to help newer front end developers manage the nightmare that can be css. Gives insights on the reasons on why it is important to master vanilla css before moving onto frameworks.",
+    published: "24/02/2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/win-the-battle-against-css-cliks6zj",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+] as const;
 
 export const projectCategoriesData = [
   {
