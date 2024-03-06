@@ -10,12 +10,13 @@ import ProjectCard from "./ProjectCard";
 import SearchBar from "./ui/SearchBar";
 import { useSearchContext } from "@/context/SearchContext";
 import { BiLoader } from "react-icons/bi";
+import FilterBar from "./ui/FilterBar";
 
 interface ProjectsProps {}
 
 const Projects: FunctionComponent<ProjectsProps> = () => {
   const { ref } = useSectionInView("Projects", 0.5);
-  const { search, filterTags } = useSearchContext();
+  const { search, setSearch, filterTags } = useSearchContext();
   const [displayCount, setDisplayCount] = useState(6);
 
   useEffect(() => {
@@ -48,7 +49,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
       className="mb-28 w-full max-w-[108rem] scroll-mt-28"
     >
       <SectionHeading>My projects</SectionHeading>
-      <SearchBar />
+      <SearchBar value={search} setValue={setSearch} />
+      <FilterBar />
       <div className="grid grid-cols-1 justify-center gap-4 md:grid-cols-[repeat(auto-fill,35rem)]">
         <AnimatePresence>
           {slicedProjects.map((project, index) => {

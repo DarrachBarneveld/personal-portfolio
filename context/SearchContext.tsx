@@ -24,6 +24,7 @@ export const SearchContext = createContext(defaultState as SearchContextType);
 
 export function SearchProvider({ children }: SearchContextProviderProps) {
   const [search, setSearch] = useState<string>("");
+
   const [filterTags, setFilterTags] = useState<string[]>([]);
 
   function handleFilterTags(tag: string) {
