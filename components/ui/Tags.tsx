@@ -65,8 +65,8 @@ const Tags: FunctionComponent<TagsProps> = ({ tags, xl }) => {
               className={clsx(
                 `${colorVariants[0]} rounded-full px-2 py-1 ${
                   xl
-                    ? "text-[0.8rem] lg:text-[.8rem] "
-                    : "text-[0.7rem] lg:text-[0.7rem]"
+                    ? "text-[0.8rem] lg:text-[.9rem] "
+                    : "text-[0.6rem] lg:text-[0.7rem]"
                 } uppercase tracking-wider lg:text-[0.7rem] ${
                   colorVariants[1]
                 } transition-colors duration-200 hover:bg-gray-800 hover:text-white hover:ring-indigo-500 focus:bg-gray-900 focus:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 focus:ring-offset-gray-100`,
