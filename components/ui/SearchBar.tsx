@@ -1,10 +1,11 @@
+import { useSearchContext } from "@/context/SearchContext";
 import { FunctionComponent, FormEvent, ChangeEvent, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 interface SearchBarProps {}
 
 const SearchBar: FunctionComponent<SearchBarProps> = () => {
-  const [search, setSearch] = useState("");
+  const { search, setSearch } = useSearchContext();
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
@@ -13,7 +14,6 @@ const SearchBar: FunctionComponent<SearchBarProps> = () => {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
     // Perform the search here
-    console.log(search);
   };
 
   return (
