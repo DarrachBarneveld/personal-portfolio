@@ -1,19 +1,12 @@
 "use client";
 
 import { FunctionComponent, useState } from "react";
-import SectionHeading from "./ui/SectionHeading";
-import { skillsData, stackData } from "@/lib/data";
-import { useSectionInView } from "@/hooks/hooks";
 import { AnimatePresence, motion } from "framer-motion";
-import { staggeredFadeUp, zoomOut } from "@/animations/variants";
-import { GiStack } from "react-icons/gi";
-import { FaCode } from "react-icons/fa6";
-
-import StackCard from "./ui/StackCard";
+import { useSectionInView } from "@/hooks/hooks";
 import ArticleCard from "./ArticleCard";
-
 import { articleData } from "@/lib/data";
 import SearchBar from "./ui/SearchBar";
+import SectionHeading from "./ui/SectionHeading";
 
 const Articles: FunctionComponent = () => {
   const [articlesSearch, setArticlesSearch] = useState("");
@@ -34,9 +27,29 @@ const Articles: FunctionComponent = () => {
       <SectionHeading>My Articles</SectionHeading>
       <SearchBar value={articlesSearch} setValue={setArticlesSearch} />
       <div className="flex w-full flex-wrap justify-center gap-2">
-        {filteredArticles.map((article, index) => (
-          <ArticleCard {...article} key={index + article.id} />
-        ))}
+        <AnimatePresence>
+          {filteredArticles.map((article, index) => {
+            return (
+              <motion.div
+                initial={{ scale: 0.85, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  delay: 0.1 * index,
+                  duration: 0.2,
+                  ease: "easeInOut",
+                }}
+                key={article.id + index + article.link}
+                exit={{
+                  scale: 0.85,
+                  opacity: 0,
+                  transition: { duration: 0.15 },
+                }}
+              >
+                <ArticleCard {...article} key={index + article.id} />
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
       </div>
     </section>
   );
