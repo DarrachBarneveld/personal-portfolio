@@ -33,7 +33,7 @@ const Articles: FunctionComponent = () => {
     >
       <SectionHeading>My Articles</SectionHeading>
       <SearchBar value={articlesSearch} setValue={setArticlesSearch} />
-      <div className="flex w-full flex-wrap justify-center gap-2">
+      <div className="mt-5 flex w-full flex-wrap justify-center gap-2">
         <AnimatePresence>
           {filteredArticles.map((article, index) => {
             return (

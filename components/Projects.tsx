@@ -12,6 +12,8 @@ import { useSearchContext } from "@/context/SearchContext";
 import { BiLoader } from "react-icons/bi";
 import FilterBar from "./ui/FilterBar";
 import { cardFadeEnterExit } from "@/animations/containers";
+import Link from "next/link";
+import { CgArrowRight } from "react-icons/cg";
 
 interface ProjectsProps {}
 
@@ -58,7 +60,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
       <SectionHeading>My projects</SectionHeading>
       <SearchBar value={search} setValue={setSearch} />
       <FilterBar />
-      <div className="grid grid-cols-1 justify-center gap-4 md:grid-cols-[repeat(auto-fill,35rem)]">
+      <div className="mt-5 grid grid-cols-1 justify-center gap-4 md:grid-cols-[repeat(auto-fill,35rem)]">
         <AnimatePresence>
           {slicedProjects.map((project, index) => {
             return (
@@ -66,6 +68,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                 {...animation}
                 transition={{ delay: 0.1 * index }}
                 key={project.id + index + project.link}
+                className="group relative mt-2"
               >
                 <ProjectCard {...project} />
               </motion.div>

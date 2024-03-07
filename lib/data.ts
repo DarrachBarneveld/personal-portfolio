@@ -267,8 +267,8 @@ export const projectsData = [
       "google api",
     ],
     imageUrl: sparkleAi,
-    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
-    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    link: "https://datesparkle.netlify.app/",
+    github: "https://github.com/DarrachBarneveld/cupidai",
     collaborators: [],
     rating: 9,
     description:
@@ -277,27 +277,27 @@ export const projectsData = [
   {
     id: "12",
     title: "Festive Timer",
-    rating: 7,
+    rating: 7.5,
     excerpt:
       "Global New Years countdown app. Users can geolcate any country on the map to learn about their New Years traditions and countdown to the New Year. Winner of CI's New Years Hackathon 2023.",
     tags: ["react", "next.js", "google api", "bootstrap", "typescript"],
     imageUrl: festiveTimer,
-    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
-    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    link: "https://festive-timer.vercel.app/",
+    github: "https://github.com/DarrachBarneveld/festive-timer",
     collaborators: [],
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
   },
   {
-    id: "12",
+    id: "13",
     title: "Ci Swag",
     rating: 10,
     excerpt:
       "Full-stack e-commerce platform for Code Institute merchandise, supplementary e-learning courses, and memberships. Final project achieved with distinction in Level 6 diploma.",
     tags: ["python", "django", "stripe", "aws", "bootstrap", "sql"],
     imageUrl: ciswag,
-    link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
-    github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
+    link: "https://ci-swag-e9f8de0bed4b.herokuapp.com/",
+    github: "https://github.com/DarrachBarneveld/ci-swag",
     collaborators: [],
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
