@@ -266,6 +266,8 @@ export const projectsData = [
       "openai",
       "google api",
     ],
+    video:
+      "https://www.dropbox.com/scl/fi/yrkgdk3y8ozgnk5v8rw20/sparkleai.mp4?rlkey=fgqw7cm1ht8zw2cil7oilj3y2&raw=1",
     imageUrl: sparkleAi,
     link: "https://datesparkle.netlify.app/",
     github: "https://github.com/DarrachBarneveld/cupidai",

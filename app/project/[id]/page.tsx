@@ -20,19 +20,31 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
     tags,
     description,
     github,
+    video,
   } = projectsData.find((project) => project.id === params.id)!;
   return (
-    <div className="mx-auto min-h-screen max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div className="-mx-4 flex flex-col md:flex-row">
+    <section className="lg:px8 mx-auto mb-28 min-h-screen w-full max-w-[100rem] scroll-mt-40 px-4 md:px-6">
+      <div className="-mx-4 flex w-full flex-col justify-center md:flex-row">
         <div className="px-4 md:flex-1">
-          <div className="mb-4 h-[460px] overflow-hidden rounded-lg bg-gray-300 ">
-            <Image
-              className="h-full w-full object-cover"
-              src={imageUrl}
-              alt="Product Image"
-              quality={95}
-            />
-          </div>
+          {video ? (
+            <video
+              className="mb-4 w-full rounded-lg object-cover"
+              loop
+              controls
+            >
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <div className="mb-4 h-full overflow-hidden rounded-lg">
+              <Image
+                className="h-full w-full object-cover"
+                src={imageUrl}
+                alt="Product Image"
+                quality={95}
+              />
+            </div>
+          )}
           <div className="-mx-2 mb-4 flex">
             <div className="w-1/2 px-2">
               <a
@@ -103,7 +115,7 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
