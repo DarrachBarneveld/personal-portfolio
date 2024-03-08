@@ -195,7 +195,7 @@ export const projectsData = [
     rating: 7.5,
     excerpt:
       "Tracking application to monitor and enhance users 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
-    tags: ["react", "typescript", "bootstrap", "firebase"],
+    tags: ["react", "typescript", "bootstrap", "firebase", "openai"],
     video:
       "https://www.dropbox.com/scl/fi/1fkq62smqdvajp3yxlkak/lepretrack.mp4?rlkey=xffyto0b0q8oyuvv2nicp6j5j&raw=1",
     imageUrl: lepreTrackV2,
