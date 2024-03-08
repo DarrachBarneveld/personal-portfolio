@@ -93,6 +93,8 @@ export const projectsData = [
     excerpt:
       "A Tower defence game and winner of the Dev Games Hackathon, June 2023.",
     tags: ["javascript", "phaserjs", "firebase", "tiled", "css"],
+    video:
+      "https://www.dropbox.com/scl/fi/b5xmh360m7zkyqjwxr4yx/neondefence.mp4?rlkey=g4y318olsivnlxzkw0p6glzs6&raw=1",
     imageUrl: neonDefence,
     link: "https://neon-defence.netlify.app/",
     github: "https://github.com/Barneslow/neon-defence",
@@ -110,6 +112,8 @@ export const projectsData = [
     excerpt:
       "Nostalic side scrolling shooter and winner of Code Institute's Retro Quest Hackathon, September 2023.",
     tags: ["javascript", "kaboomjs", "css"],
+    video:
+      "https://www.dropbox.com/scl/fi/v64p0zi87ss9d62j1e1ja/retromashup.mov?rlkey=pwj1nz9n62vrk59navrvy9o6b&raw=1",
     imageUrl: retroMashup,
     link: "https://retro-mashup-mayhem.netlify.app/",
     github: "https://github.com/DarrachBarneveld/Retro-Mashup-Mayhem",
@@ -185,6 +189,8 @@ export const projectsData = [
     excerpt:
       "Tracking application to monitor and enhance users 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
     tags: ["react", "typescript", "bootstrap", "firebase"],
+    video:
+      "https://www.dropbox.com/scl/fi/1fkq62smqdvajp3yxlkak/lepretrack.mp4?rlkey=xffyto0b0q8oyuvv2nicp6j5j&raw=1",
     imageUrl: lepreTrackV2,
     link: "https://lepretrackv2.netlify.app/",
     github: "https://github.com/DarrachBarneveld/LepreTrackV2",
@@ -213,6 +219,8 @@ export const projectsData = [
     excerpt:
       "A travel application for top global destinations, assisting users in planning their next trip by recommending top attractions along with basic desitination insights.",
     tags: ["react", "typescript", "google api", "tailwind"],
+    video:
+      "https://www.dropbox.com/scl/fi/y3tq7xkm2bgpl8qk7t2d2/touristtraveller.mov?rlkey=p8i54uey9cfkhshvpyqcwu6cs&raw=1",
     imageUrl: touristTraveller,
     link: "https://tourist-traveller.vercel.app/",
     github: "https://github.com/DarrachBarneveld/tourist-traveller",
@@ -283,6 +291,8 @@ export const projectsData = [
     excerpt:
       "Global New Years countdown app. Users can geolcate any country on the map to learn about their New Years traditions and countdown to the New Year. Winner of CI's New Years Hackathon 2023.",
     tags: ["react", "next.js", "google api", "bootstrap", "typescript"],
+    video:
+      "https://www.dropbox.com/scl/fi/008h0g16ght1y3377pj5z/festivetimer.mp4?rlkey=n6zu86v4rvvjf75uo8b6i19zl&raw=1",
     imageUrl: festiveTimer,
     link: "https://festive-timer.vercel.app/",
     github: "https://github.com/DarrachBarneveld/festive-timer",
@@ -297,6 +307,8 @@ export const projectsData = [
     excerpt:
       "Full-stack e-commerce platform for Code Institute merchandise, supplementary e-learning courses, and memberships. Final project achieved with distinction in Level 6 diploma.",
     tags: ["python", "django", "stripe", "aws", "bootstrap", "sql"],
+    video:
+      "https://www.dropbox.com/scl/fi/aw6eu0t1fvacwqrs3atti/ciswag.mp4?rlkey=vd0j03tnoh5yxcv1jos2ekzip&raw=1",
     imageUrl: ciswag,
     link: "https://ci-swag-e9f8de0bed4b.herokuapp.com/",
     github: "https://github.com/DarrachBarneveld/ci-swag",
