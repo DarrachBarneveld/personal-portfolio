@@ -72,7 +72,7 @@ const Intro: FunctionComponent = () => {
         <strong>Hey I am Darrach. </strong> I&apos;m a{" "}
         <strong>full-stack developer</strong> with{" "}
         <strong className="font-bold">2 years</strong> of experience. I enjoy
-        building <em>sites &#38; apps</em>. My focus is{" "}
+        building <em>web &#38; mobile apps</em>. My focus is Javascript with{" "}
         <u className="underline">React (Next.js)</u>.
       </motion.h1>
 
@@ -97,7 +97,7 @@ const Intro: FunctionComponent = () => {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          Download CV
           <LuDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
         <div className="flex items-center justify-center gap-2 px-4 text-lg font-medium">
