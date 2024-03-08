@@ -434,7 +434,6 @@ export const projectsData = [
         github: "https://github.com/Dima-Bulavenko",
         account: "Dima-Bulavenko",
       },
-      ,
     ],
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
