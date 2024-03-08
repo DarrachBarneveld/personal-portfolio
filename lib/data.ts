@@ -229,7 +229,33 @@ export const projectsData = [
     imageUrl: lepreTrackV2,
     link: "https://lepretrackv2.netlify.app/",
     github: "https://github.com/DarrachBarneveld/LepreTrackV2",
-    collaborators: [],
+    collaborators: [
+      {
+        name: "Shane",
+        github: "https://github.com/Shane-Donlon",
+        account: "Shane-Donlon",
+      },
+      {
+        name: "Adam",
+        github: "https://github.com/adammkeane",
+        account: "adammkeane",
+      },
+      {
+        name: "Mark",
+        github: "https://github.com/Markpm-code",
+        account: "Markpm-code",
+      },
+      {
+        name: "Amanda",
+        github: "https://github.com/apita1423",
+        account: "apita1423",
+      },
+      {
+        name: "Aurelien",
+        github: "https://github.com/AMJL-16",
+        account: "AMJL-16",
+      },
+    ],
     description:
       "This project evolved from the foundation laid by lepreTrack v1. During an in-person hackathon, my team and I invested significant effort in creating a well-fleshed-out and innovative project. While the overall experience was rewarding, we were somewhat disheartened by the judges' scores. In response, I acknowledged that a successful tech project encompasses more than just advanced and complex code. Team agility, effective project pitching to non-tech audiences, and ease of accessibility are equally crucial. To address this realization, I took it upon myself to rectify the setback by rebuilding the project using the latest front-end tools, addressing any bugs, and paying homage to the collaborative efforts of the team.",
   },
