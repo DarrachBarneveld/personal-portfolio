@@ -409,33 +409,32 @@ export const projectsData = [
     link: "https://festive-timer.vercel.app/",
     github: "https://github.com/DarrachBarneveld/festive-timer",
     collaborators: [
-      [
-        {
-          name: "Dayana",
-          github: "https://github.com/Dayana-N",
-          account: "Dayana-N",
-        },
-        {
-          name: "Sandra",
-          github: "https://github.com/SandraBergstrom",
-          account: "SandraBergstrom",
-        },
-        {
-          name: "Bartosz",
-          github: "https://github.com/bartoszgebarowski",
-          account: "bartoszgebarowski",
-        },
-        {
-          name: "Oluwaseun",
-          github: "https://github.com/57Esther",
-          account: "57Esther",
-        },
-        {
-          name: "Dima",
-          github: "https://github.com/Dima-Bulavenko",
-          account: "Dima-Bulavenko",
-        },
-      ],
+      {
+        name: "Dayana",
+        github: "https://github.com/Dayana-N",
+        account: "Dayana-N",
+      },
+      {
+        name: "Sandra",
+        github: "https://github.com/SandraBergstrom",
+        account: "SandraBergstrom",
+      },
+      {
+        name: "Bartosz",
+        github: "https://github.com/bartoszgebarowski",
+        account: "bartoszgebarowski",
+      },
+      {
+        name: "Oluwaseun",
+        github: "https://github.com/57Esther",
+        account: "57Esther",
+      },
+      {
+        name: "Dima",
+        github: "https://github.com/Dima-Bulavenko",
+        account: "Dima-Bulavenko",
+      },
+      ,
     ],
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
