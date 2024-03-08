@@ -214,7 +214,7 @@ export const projectsData = [
       "A mobile application for mindfulness and meditation, featuring a vast collection of quotes and content from historical figures.",
     tags: ["react native", "javascript", "expo"],
     video:
-      "https://www.dropbox.com/scl/fi/f95tgum17vmcg65cbmi8d/bmeditation.mp4?rlkey=di3gcf4moty9p9nkkureshplm&raw=1",
+      "https://www.dropbox.com/scl/fi/yw2u65mbfntykv8v0hgff/bmeditation.mp4?rlkey=vj8wt65y08tslnb1xeny2w3fd&raw=1",
     imageUrl: bmeditation,
     link: "https://play.google.com/store/apps/details?id=com.barneslow.bmeditation&hl=en&gl=US",
     github: "https://github.com/Barneslow/bmeditation",

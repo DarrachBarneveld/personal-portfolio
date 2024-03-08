@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import { CgArrowRight } from "react-icons/cg";
 import { LuDownload } from "react-icons/lu";
+import { SiUpwork } from "react-icons/si";
 import { useSectionInView } from "@/hooks/hooks";
 
 const Intro: FunctionComponent = () => {
@@ -99,22 +100,31 @@ const Intro: FunctionComponent = () => {
           Download CV{" "}
           <LuDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
+        <div className="flex items-center justify-center gap-2 px-4 text-lg font-medium">
+          <a
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/30 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.10] hover:border-black/50 hover:bg-[#0174b0] hover:text-white focus:scale-[1.10] focus:border-black/50 focus:bg-[#0174b0] active:scale-105"
+            href="https://www.linkedin.com/in/darrach-barneveld-2b493511b/"
+            target="_blank"
+          >
+            <FaLinkedinIn />
+          </a>
 
-        <a
-          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 "
-          href="https://www.linkedin.com/in/darrach-barneveld-2b493511b/"
-          target="_blank"
-        >
-          <FaLinkedinIn />
-        </a>
+          <a
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/30 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.10] hover:border-black/50 hover:bg-[#24292E] hover:text-white focus:scale-[1.10] focus:border-black/50 focus:bg-[#24292E] active:scale-105"
+            href="https://github.com/DarrachBarneveld"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
 
-        <a
-          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
-          href="https://github.com/DarrachBarneveld"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/30 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.10] hover:border-black/50 hover:bg-[#13a807] hover:text-white focus:scale-[1.10] focus:border-black/50 focus:bg-[#13a807] active:scale-105"
+            href="https://www.upwork.com/freelancers/~018620769111853cfe"
+            target="_blank"
+          >
+            <SiUpwork />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
