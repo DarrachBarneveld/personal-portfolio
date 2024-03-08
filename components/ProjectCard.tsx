@@ -11,6 +11,7 @@ import { CgArrowRight } from "react-icons/cg";
 type ProjectProps = (typeof projectsData)[number];
 
 const ProjectCard: FunctionComponent<ProjectProps> = ({
+  name,
   title,
   excerpt,
   tags,
@@ -21,7 +22,7 @@ const ProjectCard: FunctionComponent<ProjectProps> = ({
   return (
     <>
       <Link
-        href={`/project/${id}`}
+        href={`/project/${name}`}
         className="group/more absolute -top-5 right-2 z-20 mt-2 flex w-fit items-center gap-2 rounded-full bg-gray-900 px-4 py-1 text-white outline-none transition hover:bg-gray-700"
       >
         <span className="text-xs md:text-sm lg:text-base">More Info</span>

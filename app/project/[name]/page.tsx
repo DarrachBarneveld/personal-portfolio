@@ -7,7 +7,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaCode, FaGithub } from "react-icons/fa";
 
 interface PageProps {
-  params: { id: string };
+  params: { name: string };
 }
 
 const page: FunctionComponent<PageProps> = ({ params }) => {
@@ -21,14 +21,16 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
     description,
     github,
     video,
-  } = projectsData.find((project) => project.id === params.id)!;
+  } = projectsData.find((project) => project.name === params.name)!;
+
+  console.log(params);
   return (
     <section className="lg:px8 mx-auto mb-28 min-h-screen w-full max-w-[100rem] scroll-mt-40 px-4 md:px-6">
       <div className="-mx-4 flex w-full flex-col justify-center md:flex-row">
         <div className="px-4 md:flex-1">
           {video ? (
             <video
-              className="mb-4 w-full rounded-lg object-cover"
+              className="mb-4 max-h-[600px] w-full rounded-lg "
               loop
               controls
             >
@@ -73,15 +75,6 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
           <div className="mb-4">
             <Tags tags={tags} />
           </div>
-
-          {title === "B-Meditation" && (
-            <p className="mb-4 rounded-md bg-red-200 p-1 text-center text-red-700">
-              <strong>
-                Avoid using the API, it is undergoing maintenance. Download and
-                use the app via the Google Play Store link.
-              </strong>
-            </p>
-          )}
           {collaborators.length != 0 && (
             <div className="mb-4">
               <span className="font-bold text-gray-700">Collaborators</span>

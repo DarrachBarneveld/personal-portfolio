@@ -89,6 +89,7 @@ export const projectsData = [
   {
     id: "1",
     title: "Neon Defence",
+    name: "neon_defence",
     rating: 7,
     excerpt:
       "A Tower defence game and winner of the Dev Games Hackathon, June 2023.",
@@ -108,6 +109,7 @@ export const projectsData = [
   {
     id: "2",
     rating: 7.5,
+    name: "retro_mashup_mayhem",
     title: "Retro Mashup Mayhem",
     excerpt:
       "Nostalic side scrolling shooter and winner of Code Institute's Retro Quest Hackathon, September 2023.",
@@ -148,6 +150,7 @@ export const projectsData = [
   // },
   {
     id: "4",
+    name: "lord_of_the_rings_pokemon",
     title: "Lord of the Rings Pokemon",
     rating: 4,
     excerpt:
@@ -170,6 +173,7 @@ export const projectsData = [
 
   {
     id: "5",
+    name: "coolcoders",
     title: "Cool Coders",
     rating: 7,
     excerpt:
@@ -186,6 +190,7 @@ export const projectsData = [
   },
   {
     id: "6",
+    name: "lepretrackv2",
     title: "LepreTrack V2",
     rating: 7.5,
     excerpt:
@@ -203,6 +208,7 @@ export const projectsData = [
   {
     id: "7",
     title: "B-Meditation",
+    name: "bmeditation",
     rating: 8,
     excerpt:
       "A mobile application for mindfulness and meditation, featuring a vast collection of quotes and content from historical figures.",
@@ -210,7 +216,7 @@ export const projectsData = [
     video:
       "https://www.dropbox.com/scl/fi/f95tgum17vmcg65cbmi8d/bmeditation.mp4?rlkey=di3gcf4moty9p9nkkureshplm&raw=1",
     imageUrl: bmeditation,
-    link: "https://bmeditation-api-website.vercel.app/",
+    link: "https://play.google.com/store/apps/details?id=com.barneslow.bmeditation&hl=en&gl=US",
     github: "https://github.com/Barneslow/bmeditation",
     collaborators: [],
     description:
@@ -235,6 +241,7 @@ export const projectsData = [
   {
     id: "9",
     title: "Lovin Summer",
+    name: "loving_summer",
     rating: 5,
     excerpt:
       "An hackathon app collaborating with initiative with Tourism Ireland/ Failte Ireland to boost summer tourism through a traveler app highlighting top destinations and activity types.",
@@ -254,6 +261,7 @@ export const projectsData = [
   {
     id: "10",
     title: "Trivia Trumps",
+    name: "trivia_trumps",
     excerpt:
       "A quiz game leveraging the Open Trivia API, featuring multiple categories with varying difficulty levels. Utilised by local pubs throughout Dublin.",
     tags: ["html", "css", "javascript"],
@@ -270,6 +278,7 @@ export const projectsData = [
   {
     id: "11",
     title: "Sparkle Ai",
+    name: "sparkle_ai",
     excerpt:
       "An Ai Planning assistant. Generates date recommendations based on user modelling/inputs and lists nearby locations to carry out the recommendation.",
     tags: [
@@ -293,6 +302,7 @@ export const projectsData = [
   {
     id: "12",
     title: "Festive Timer",
+    name: "festival_timer",
     rating: 7.5,
     excerpt:
       "Global New Years countdown app. Users can geolcate any country on the map to learn about their New Years traditions and countdown to the New Year. Winner of CI's New Years Hackathon 2023.",
@@ -309,6 +319,7 @@ export const projectsData = [
   {
     id: "13",
     title: "Ci Swag",
+    name: "ci_swag",
     rating: 10,
     excerpt:
       "Full-stack e-commerce platform for Code Institute merchandise, supplementary e-learning courses, and memberships. Final project achieved with distinction in Level 6 diploma.",
