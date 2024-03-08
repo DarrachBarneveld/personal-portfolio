@@ -175,6 +175,8 @@ export const projectsData = [
     excerpt:
       "A hub for tech enthusiasts to share insights and knowledge through writing and engaging with articles.",
     tags: ["python", "django", "bootstrap", "sql"],
+    video:
+      "https://www.dropbox.com/scl/fi/av092uqcg5q8ce8087k4m/coolcoders.mp4?rlkey=e9hs0e1nbxzgr4o468p71czbh&raw=1",
     imageUrl: coolcoders,
     link: "https://coolcoders-b69260c4617a.herokuapp.com/",
     github: "https://github.com/DarrachBarneveld/CoolCoders-PP4",
@@ -185,7 +187,7 @@ export const projectsData = [
   {
     id: "6",
     title: "LepreTrack V2",
-    rating: 8,
+    rating: 7.5,
     excerpt:
       "Tracking application to monitor and enhance users 'green score,' tracking eco-friendly habits and promoting sustainable living practices.",
     tags: ["react", "typescript", "bootstrap", "firebase"],
@@ -205,6 +207,8 @@ export const projectsData = [
     excerpt:
       "A mobile application for mindfulness and meditation, featuring a vast collection of quotes and content from historical figures.",
     tags: ["react native", "javascript", "expo"],
+    video:
+      "https://www.dropbox.com/scl/fi/f95tgum17vmcg65cbmi8d/bmeditation.mp4?rlkey=di3gcf4moty9p9nkkureshplm&raw=1",
     imageUrl: bmeditation,
     link: "https://bmeditation-api-website.vercel.app/",
     github: "https://github.com/Barneslow/bmeditation",
@@ -253,6 +257,8 @@ export const projectsData = [
     excerpt:
       "A quiz game leveraging the Open Trivia API, featuring multiple categories with varying difficulty levels. Utilised by local pubs throughout Dublin.",
     tags: ["html", "css", "javascript"],
+    video:
+      "https://www.dropbox.com/scl/fi/njuqp3c5wwqi3fv2vjfhw/triviatrumps.mp4?rlkey=zomv1vp2rzdsnzhu5m3ahf61i&raw=1",
     imageUrl: triviaTrumps,
     link: "https://darrachbarneveld.github.io/Project-2-Code-Institute/",
     github: "https://github.com/DarrachBarneveld/Project-2-Code-Institute",
