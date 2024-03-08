@@ -23,7 +23,6 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
     video,
   } = projectsData.find((project) => project.name === params.name)!;
 
-  console.log(params);
   return (
     <section className="lg:px8 mx-auto mb-28 min-h-screen w-full max-w-[100rem] scroll-mt-40 px-4 md:px-6">
       <div className="-mx-4 flex w-full flex-col justify-center md:flex-row">
@@ -80,19 +79,46 @@ const page: FunctionComponent<PageProps> = ({ params }) => {
               <span className="font-bold text-gray-700">Collaborators</span>
               <ul className="items-center">
                 {collaborators &&
-                  collaborators.map((collab, index) => (
-                    <li key={index}>
+                  collaborators.map(async (collab, index) => {
+                    const response = await fetch(
+                      `https://api.github.com/users/${collab.account}`,
+                      {
+                        headers: {
+                          Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN}`,
+                        },
+                      },
+                    );
+
+                    const data = await response.json();
+                    return (
                       <a
                         href={collab.github}
-                        aria-label={`Link to ${collab.name}'s Github`}
                         target="_blank"
-                        className="flex items-center gap-2 text-lg"
+                        key={index + collab.account}
                       >
-                        <p className="font-bold">{collab.name}</p>
-                        <FaGithub />
+                        <li className="group flex cursor-pointer items-center justify-between border-t p-3 hover:bg-gray-200">
+                          <div className="flex items-center">
+                            <img
+                              className="h-10 w-10 rounded-full"
+                              src={data.avatar_url}
+                            />
+                            <div className="ml-2 flex flex-col">
+                              <div className="text-sm font-bold leading-snug text-gray-900">
+                                {collab.name}
+                              </div>
+                              <div className="text-xs leading-snug text-gray-600">
+                                @{collab.account}
+                              </div>
+                            </div>
+                          </div>
+                          <button className="text-md flex items-center justify-center gap-2 rounded-full border border-blue-400 px-3 py-1 font-bold text-blue-400 group-hover:bg-blue-100">
+                            <FaGithub />
+                            Follow
+                          </button>
+                        </li>
                       </a>
-                    </li>
-                  ))}
+                    );
+                  })}
               </ul>
             </div>
           )}

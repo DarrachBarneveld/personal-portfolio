@@ -100,8 +100,16 @@ export const projectsData = [
     link: "https://neon-defence.netlify.app/",
     github: "https://github.com/Barneslow/neon-defence",
     collaborators: [
-      { name: "Tanguy", github: "https://github.com/tlalexandre" },
-      { name: "Devan", github: "https://github.com/devancadman" },
+      {
+        name: "Tanguy",
+        github: "https://github.com/tlalexandre",
+        account: "tlalexandre",
+      },
+      {
+        name: "Devan",
+        github: "https://github.com/devancadman",
+        account: "devancadman",
+      },
     ],
     description:
       "This game was developed for the Dev Games hackathon under my hobby account, Barneslow. We had approximately a month to create a functional game, using any software of our choice. We decided to stick with a browser-based game and opted for PhaserJS. The learning experience and collaboration were remarkable, given that we were able to assemble our own team. I served as the principal architect for the game's logic, while others contributed to UI and design. Despite encountering significant deployment challenges with Vite, MPA, and Netlify, we managed to secure the 1st position, a pleasant surprise considering the hurdles we faced.",
@@ -120,11 +128,31 @@ export const projectsData = [
     link: "https://retro-mashup-mayhem.netlify.app/",
     github: "https://github.com/DarrachBarneveld/Retro-Mashup-Mayhem",
     collaborators: [
-      { name: "Dan", github: "https://github.com/DanMorriss" },
-      { name: "Sandra", github: "https://github.com/SandraBergstrom" },
-      { name: "Debbie", github: "https://github.com/DebbieBergstrom" },
-      { name: "Shida", github: "https://github.com/Shida18719" },
-      { name: "Yash", github: "https://github.com/ysgurjar" },
+      {
+        name: "Dan",
+        github: "https://github.com/DanMorriss",
+        account: "DanMorriss",
+      },
+      {
+        name: "Sandra",
+        github: "https://github.com/SandraBergstrom",
+        account: "SandraBergstrom",
+      },
+      {
+        name: "Debbie",
+        github: "https://github.com/DebbieBergstrom",
+        account: "DebbieBergstrom",
+      },
+      {
+        name: "Shida",
+        github: "https://github.com/Shida18719",
+        account: "Shida18719",
+      },
+      {
+        name: "Yash",
+        github: "https://github.com/ysgurjar",
+        account: "ysgurjar",
+      },
     ],
     description:
       "This project was developed using KaboomJS during Code Institute's September Retro Quest Hackathon. My randomly assigned team was tasked with building a game using a JS library of their choice within a 5-day timeframe. I took on the responsibility of overseeing the logic and architecture of the game, and additionally, I was nominated as the scrum master for the hackathon. The creative input and dedication of the team played a pivotal role in securing our victory.",
@@ -250,10 +278,26 @@ export const projectsData = [
     link: "https://musical-kataifi-25a4e4.netlify.app/",
     github: "https://github.com/Joao4569/lovin_summer",
     collaborators: [
-      { name: "João", github: "https://github.com/Joao4569" },
-      { name: "Juan", github: "https://github.com/jbocciadev" },
-      { name: "Benjamin", github: "https://github.com/Benohene" },
-      { name: "Jose", github: "https://github.com/devjldp" },
+      {
+        name: "João",
+        github: "https://github.com/Joao4569",
+        account: "Joao4569",
+      },
+      {
+        name: "Juan",
+        github: "https://github.com/jbocciadev",
+        account: "jbocciadev",
+      },
+      {
+        name: "Benjamin",
+        github: "https://github.com/Benohene",
+        account: "Benohene",
+      },
+      {
+        name: "Jose",
+        github: "https://github.com/devjldp",
+        account: "devjldp",
+      },
     ],
     description:
       "This project was developed for Code Institute's Summer of Code hackathon. Our team was challenged with creating an application that encouraged people, including myself and fellow developers, to embrace outdoor activities and savor the summer season. Instead of opting for a straightforward integration of Google Maps, I aspired to craft a fully functional and responsive map using Leaflet, incorporating data from Failte Ireland/Tourism Ireland. The CSV data was parsed and utilized to render markers based on activity type, location, and distance. With the collaborative efforts of the team, we clinched the 2nd place, and my primary role centered around the construction of the custom maps.",
@@ -294,7 +338,33 @@ export const projectsData = [
     imageUrl: sparkleAi,
     link: "https://datesparkle.netlify.app/",
     github: "https://github.com/DarrachBarneveld/cupidai",
-    collaborators: [],
+    collaborators: [
+      {
+        name: "Camelia",
+        github: "https://github.com/Camelia03",
+        account: "Camelia03",
+      },
+      {
+        name: "Erik",
+        github: "https://github.com/Erikas-Ramanauskas",
+        account: "Erikas-Ramanauskas",
+      },
+      {
+        name: "Dimitri",
+        github: "https://github.com/dimitri-edel",
+        account: "dimitri-edel",
+      },
+      {
+        name: "Patricia",
+        github: "https://github.com/pswhdev",
+        account: "pswhdev",
+      },
+      {
+        name: "Kiki",
+        github: "https://github.com/KikiBerg",
+        account: "KikiBerg",
+      },
+    ],
     rating: 9,
     description:
       "This marked my second project, developed to industry standards for Code Institute's Diploma in Full Stack Development. The project is a quiz game leveraging the Open Trivia API. Featuring multiple categories with varying difficulty levels, users engage in answering questions to unlock badges and, ultimately, earn trump cards.",
