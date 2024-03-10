@@ -72,7 +72,7 @@ const Intro: FunctionComponent = () => {
         <strong>Hey I am Darrach. </strong> I&apos;m a{" "}
         <strong>full-stack developer</strong> with{" "}
         <strong className="font-bold">2 years</strong> of experience. I enjoy
-        building <em>web &#38; mobile apps</em>. My focus is Javascript with{" "}
+        building <em>web &#38; mobile apps</em>. My focus is JavaScript with{" "}
         <u className="underline">React (Next.js)</u>.
       </motion.h1>
 
