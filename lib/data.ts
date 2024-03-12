@@ -629,10 +629,10 @@ export const skillsData = [
   "Framer Motion",
 ] as const;
 
-// export const collabData = [
-//   { title: "Codu", imageUrl: codu, link: "https://github.com/codu-code/codu" },
-//   { title: "ZTM", imageUrl: ztm, link: "https://github.com/zero-to-mastery" },
-// ] as const;
+export const collabData = [
+  { title: "Codu", imageUrl: codu, link: "https://github.com/codu-code/codu" },
+  { title: "ZTM", imageUrl: ztm, link: "https://github.com/zero-to-mastery" },
+] as const;
 
 export const hackathonBadges = [
   "https://api.eu.badgr.io/public/assertions/6LVA946fQ6CwOlUAlAWIGA",
