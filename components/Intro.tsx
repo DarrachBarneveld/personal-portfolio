@@ -94,7 +94,7 @@ const Intro: FunctionComponent = () => {
 
         <a
           className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
-          href="/darrachbarneveldcv.pdf"
+          href="/CV.pdf"
           download
         >
           Download CV
@@ -117,13 +117,13 @@ const Intro: FunctionComponent = () => {
             <FaGithubSquare />
           </a>
 
-          <a
+          {/* <a
             className="flex cursor-pointer items-center gap-2 rounded-full border border-black/30 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.10] hover:border-black/50 hover:bg-[#13a807] hover:text-white focus:scale-[1.10] focus:border-black/50 focus:bg-[#13a807] active:scale-105"
             href="https://www.upwork.com/freelancers/~018620769111853cfe"
             target="_blank"
           >
             <SiUpwork />
-          </a>
+          </a> */}
         </div>
       </motion.div>
     </section>
