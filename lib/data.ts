@@ -446,6 +446,19 @@ export const projectsData = [
 
 export const articleData = [
   {
+    id: "7",
+    title:
+      "Build Your Own Chrome Extension to Track Applications and Conquer the Job Hunt",
+    excerpt:
+      "Dive into the world of Chrome extensions! Learn how to create your very own web extension by understanding the key basic key priciples. Unlock the full potential of browser customisation, or just create a simple tool to help you with your job hunt.",
+    published: "09/01/2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1616499370260-485b3e5ed653?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://www.codu.co/articles/build-your-own-chrome-extension-to-track-applications-and-conquer-the-job-hunt-mwf5sqpe",
+    websiteImage: codu,
+    websiteText: "Codu",
+  },
+  {
     id: "1",
     title:
       "Integrating Google's appointment scheduler into your NextJS application",
