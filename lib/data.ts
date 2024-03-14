@@ -35,6 +35,14 @@ export const links = [
     name: "Articles",
     hash: "/#articles",
   },
+  {
+    name: "Collab",
+    hash: "/#collab",
+  },
+  {
+    name: "Experience",
+    hash: "/#experience",
+  },
 ] as const;
 
 export const experiencesData = [
@@ -44,21 +52,21 @@ export const experiencesData = [
     description:
       "Undertaking a diploma program in web development full-time, which is an industry recognised qualification in Ireland taught to industry standards with a focus on fostering self-reliance and practical skills.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023 - Present",
+    date: "2023",
   },
   {
-    title: "Digital Media Buyer Freelance",
+    title: "Marketing Consultant/Web Developer",
     location: "Remote (Dublin, Ire)",
     description:
-      "Engaged in consulting services for marketing strategies across various social media platforms. Provided hands-on marketing support, with a primary focus on enhancing the performance of advertising return on investment (ROI) for predominantly small businesses.",
+      "As a self-employed Marketing Consultant and Web Developer from 2022 to 2023, I specialized in designing UI/UX for various projects including a music color recommendation app and an online sports ticketing website. Additionally, I provided marketing consultation to various businesses, focusing on strategy development and Facebook media buying, while also implementing theme toggling functionality for a software development community website.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2022",
+    date: "2022 - 2023",
   },
   {
-    title: "Media Manager",
+    title: "Marketing Manager",
     location: "Remote KingsGuardMedia (Melbourne, Aus / Stockholm Swe)",
     description:
-      "Oversaw the lead generation team serving US clients in the Education and Health sectors, managing creative aspects, accounting, task assignments, and ensuring achievement of key performance indicators (KPIs). This role required coordination between creative, operational, and technical teams, contributing to the team's success in meeting organisational goals and client expectations.",
+      "As Marketing Manager at KingsGuard Media (2019-2022), I oversaw $100k monthly ad spend, developed automated campaign management systems, and improved audience targeting. Previously, as Media Buyer and Web Designer (2017-2019), I optimized ad spend through pixel tracking, conducted A/B testing for UI/UX improvement, and managed social media engagement.",
     icon: React.createElement(BsGraphUpArrow),
     date: "2017 - 2021",
   },
@@ -68,7 +76,7 @@ export const experiencesData = [
     description:
       "Engaged in sales and customer support, extending assistance to the B2B logistical orders team. Met and surpassed daily/weekly KPIs, undertook special assignment projects, and delivered essential business logistical support, including order management, for B2B customers and restaurants in the Greater Melbourne region.",
     icon: React.createElement(FaPhone),
-    date: "2015 - 2016",
+    date: "2014 - 2016",
   },
 ] as const;
 
