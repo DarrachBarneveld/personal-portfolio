@@ -3,8 +3,10 @@
 import { FunctionComponent, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
+import MobileNav from "./MobileNav";
 
 const Header: FunctionComponent = () => {
+  const [isVisible, setIsVisible] = useState(window.innerWidth >= 768);
   const [navBarHidden, setNavBarHidden] = useState(false);
   const scrollYRef = useRef(0);
   const userNotInteractedScroll = useRef(true);
@@ -29,19 +31,45 @@ const Header: FunctionComponent = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsVisible(window.innerWidth >= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <header className="relative z-[999]">
-      {!navBarHidden && (
+      {isVisible ? (
         <>
           <motion.div
             className="fixed left-1/2 top-0 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[34rem] sm:rounded-full"
             initial={{ y: -100, x: "-50%", opacity: 0 }}
             animate={{ y: 0, x: "-50%", opacity: 1 }}
           />
-          <Navbar
-            initialAnimation={initialAnimation}
-            userNotInteractedScroll={userNotInteractedScroll}
-          />
+          <Navbar />
+        </>
+      ) : (
+        <>
+          {!navBarHidden && (
+            <>
+              <motion.div
+                className="fixed left-1/2 top-0 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[34rem] sm:rounded-full"
+                initial={{ y: -100, x: "-50%", opacity: 0 }}
+                animate={{ y: 0, x: "-50%", opacity: 1 }}
+              />
+              <MobileNav
+                initialAnimation={initialAnimation}
+                userNotInteractedScroll={userNotInteractedScroll}
+              />
+            </>
+          )}
         </>
       )}
     </header>

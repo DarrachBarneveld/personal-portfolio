@@ -6,9 +6,15 @@ import { opacityScaleChild, staggerContainer } from "@/animations/containers";
 import { links } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
-interface NavbarProps {}
+interface NavbarProps {
+  initialAnimation: MutableRefObject<boolean>;
+  userNotInteractedScroll: MutableRefObject<boolean>;
+}
 
-const MobileNav: FunctionComponent<NavbarProps> = ({}) => {
+const MobileNav: FunctionComponent<NavbarProps> = ({
+  initialAnimation,
+  userNotInteractedScroll,
+}) => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
@@ -17,8 +23,9 @@ const MobileNav: FunctionComponent<NavbarProps> = ({}) => {
       <motion.ul
         className="flex w-[22rem] flex-wrap items-center justify-center space-y-0.5 text-[0.9rem] font-medium text-gray-500 md:flex-nowrap "
         variants={staggerContainer}
-        initial="initial"
+        initial={initialAnimation.current ? false : "initial"}
         animate="animate"
+        onAnimationComplete={() => (initialAnimation.current = true)}
       >
         {links.map((link) => (
           <motion.li
@@ -36,6 +43,12 @@ const MobileNav: FunctionComponent<NavbarProps> = ({}) => {
               href={link.hash}
               onClick={() => {
                 setActiveSection(link.name);
+                userNotInteractedScroll.current = false;
+
+                window.addEventListener("scrollend", (event) => {
+                  userNotInteractedScroll.current = true;
+                });
+
                 setTimeOfLastClick(Date.now());
               }}
             >
