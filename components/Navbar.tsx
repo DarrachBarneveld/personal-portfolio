@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, MutableRefObject } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import clsx from "clsx";
@@ -6,19 +6,26 @@ import { opacityScaleChild, staggerContainer } from "@/animations/containers";
 import { links } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
-interface NavbarProps {}
+interface NavbarProps {
+  initialAnimation: MutableRefObject<boolean>;
+  userNotInteractedScroll: MutableRefObject<boolean>;
+}
 
-const Navbar: FunctionComponent<NavbarProps> = () => {
+const Navbar: FunctionComponent<NavbarProps> = ({
+  initialAnimation,
+  userNotInteractedScroll,
+}) => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
     <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
       <motion.ul
-        className="flex w-[34rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5"
+        className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5"
         variants={staggerContainer}
-        initial="initial"
+        initial={initialAnimation.current ? false : "initial"}
         animate="animate"
+        onAnimationComplete={() => (initialAnimation.current = true)}
       >
         {links.map((link) => (
           <motion.li
@@ -36,6 +43,12 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
               href={link.hash}
               onClick={() => {
                 setActiveSection(link.name);
+                userNotInteractedScroll.current = false;
+
+                window.addEventListener("scrollend", (event) => {
+                  userNotInteractedScroll.current = true;
+                });
+
                 setTimeOfLastClick(Date.now());
               }}
             >
