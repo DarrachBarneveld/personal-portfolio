@@ -94,7 +94,7 @@ const Intro: FunctionComponent = () => {
 
         <a
           className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
-          href="/CV.pdf"
+          href="/DarrachBarneveldCV.pdf"
           download
         >
           Download CV
