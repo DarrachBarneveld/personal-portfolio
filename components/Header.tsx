@@ -6,9 +6,7 @@ import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 
 const Header: FunctionComponent = () => {
-  const [isVisible, setIsVisible] = useState(
-    typeof window !== "undefined" ? window.innerWidth >= 768 : false,
-  );
+  const [isVisible, setIsVisible] = useState(window.innerWidth >= 768);
   const [navBarHidden, setNavBarHidden] = useState(false);
   const scrollYRef = useRef(0);
   const userNotInteractedScroll = useRef(true);
