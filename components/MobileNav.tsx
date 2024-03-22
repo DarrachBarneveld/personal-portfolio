@@ -21,7 +21,7 @@ const MobileNav: FunctionComponent<NavbarProps> = ({
   return (
     <nav className="fixed left-1/2 top-[0.15rem] flex h-10 -translate-x-1/2 md:top-[1.7rem]">
       <motion.ul
-        className="flex w-[22rem] flex-wrap items-center justify-center space-y-0.5 text-[0.9rem] font-medium text-gray-500 md:flex-nowrap "
+        className="flex w-[22rem] flex-wrap items-center justify-center space-y-0.5 text-[0.9rem] font-medium text-gray-500 md:flex-nowrap"
         variants={staggerContainer}
         initial={initialAnimation.current ? false : "initial"}
         animate="animate"
@@ -35,7 +35,7 @@ const MobileNav: FunctionComponent<NavbarProps> = ({
           >
             <Link
               className={clsx(
-                "flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-950",
+                "flex w-full items-center justify-center px-3 py-3 text-2xl transition hover:text-gray-950",
                 {
                   "text-gray-950": activeSection === link.name,
                 },
@@ -52,7 +52,7 @@ const MobileNav: FunctionComponent<NavbarProps> = ({
                 setTimeOfLastClick(Date.now());
               }}
             >
-              {link.name}
+              {link.icon}
               {link.name === activeSection && (
                 <motion.span
                   className="absolute inset-0 -z-10 rounded-full bg-indigo-200"

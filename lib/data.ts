@@ -3,6 +3,12 @@ import { CgTrophy, CgWorkAlt } from "react-icons/cg";
 import { FaGamepad, FaPhone } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { LuGraduationCap, LuLaptop } from "react-icons/lu";
+import { FaHome } from "react-icons/fa";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { RiArticleLine } from "react-icons/ri";
+import { FaHandshake } from "react-icons/fa";
+import { BsPersonWorkspace } from "react-icons/bs";
+
 import showcase from "@/public/images/showcase.png";
 import hackathon from "@/public/images/hackathon.jpg";
 import gameDev from "@/public/images/gamedev.webp";
@@ -26,22 +32,27 @@ export const links = [
   {
     name: "Home",
     hash: "/#home",
+    icon: React.createElement(FaHome),
   },
   {
     name: "Projects",
     hash: "/#projects",
+    icon: React.createElement(AiOutlineFundProjectionScreen),
   },
   {
     name: "Articles",
     hash: "/#articles",
+    icon: React.createElement(RiArticleLine),
   },
   {
     name: "Collab",
     hash: "/#collab",
+    icon: React.createElement(FaHandshake),
   },
   {
     name: "Experience",
     hash: "/#experience",
+    icon: React.createElement(BsPersonWorkspace),
   },
 ] as const;
 

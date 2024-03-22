@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import { CgArrowRight } from "react-icons/cg";
 import { LuDownload } from "react-icons/lu";
-import { SiUpwork } from "react-icons/si";
 import { useSectionInView } from "@/hooks/hooks";
 
 const Intro: FunctionComponent = () => {
