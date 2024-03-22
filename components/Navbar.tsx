@@ -15,7 +15,7 @@ const MobileNav: FunctionComponent<NavbarProps> = ({}) => {
   return (
     <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 md:top-[1.7rem]">
       <motion.ul
-        className="flex w-[22rem] flex-wrap items-center justify-center space-y-0.5 text-[0.9rem] font-medium text-gray-500 md:flex-nowrap "
+        className="flex w-[22rem] flex-wrap items-center justify-center space-y-0.5 text-[0.9rem] font-medium text-gray-500 md:flex-nowrap"
         variants={staggerContainer}
         initial="initial"
         animate="animate"

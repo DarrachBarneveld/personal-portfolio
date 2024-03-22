@@ -64,16 +64,17 @@ const Header: FunctionComponent = () => {
       ) : (
         <>
           {!navBarHidden && (
-            <motion.div
-              className="fixed left-1/2 top-0 h-12 w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
-              initial={{ y: -100, x: "-50%", opacity: 0 }}
-              animate={{ y: 0, x: "-50%", opacity: 1 }}
-            >
+            <>
+              <motion.div
+                className="fixed left-1/2 top-0 h-12 w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
+                initial={{ y: -100, x: "-50%", opacity: 0 }}
+                animate={{ y: 0, x: "-50%", opacity: 1 }}
+              ></motion.div>
               <MobileNav
                 initialAnimation={initialAnimation}
                 userNotInteractedScroll={userNotInteractedScroll}
               />
-            </motion.div>
+            </>
           )}
         </>
       )}
